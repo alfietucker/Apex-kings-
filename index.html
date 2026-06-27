@@ -121,17 +121,23 @@ a { color: inherit; text-decoration: none; }
 
 /* ─── PORTFOLIO ─── */
 .portfolio { padding: 96px 0 0; background: var(--white); }
-.portfolio__head { margin-bottom: 48px; }
+.portfolio__head { margin-bottom: 56px; }
 .portfolio__head h2 { font-size: clamp(28px, 3vw, 42px); font-weight: 700; color: var(--black); letter-spacing: -.025em; line-height: 1.12; margin-bottom: 10px; }
-.portfolio__head p { font-size: 16px; color: var(--muted); max-width: 440px; }
-.portfolio__image { width: 100%; overflow: hidden; }
-.portfolio__image img { width: 100%; height: auto; display: block; }
-.portfolio__credits { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--rule); margin-top: 0; }
-.credit { padding: 22px 24px; border-right: 1px solid var(--rule); }
-.credit:last-child { border-right: none; }
-.credit__trade { display: block; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--red); margin-bottom: 3px; }
-.credit__name { font-size: 14px; font-weight: 700; color: var(--black); }
-.credit__loc { font-size: 13px; color: var(--muted); }
+.portfolio__head p { font-size: 16px; color: var(--muted); max-width: 480px; }
+.portfolio__grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
+.portfolio__card { overflow: hidden; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.portfolio__card-img { height: 340px; background-image: url('portfolio.png'); background-size: 200% 200%; background-repeat: no-repeat; transition: transform .5s cubic-bezier(.25,.46,.45,.94); }
+.portfolio__card:hover .portfolio__card-img { transform: scale(1.03); }
+.portfolio__card--tl .portfolio__card-img { background-position: 0% 0%; }
+.portfolio__card--tr .portfolio__card-img { background-position: 100% 0%; }
+.portfolio__card--bl .portfolio__card-img { background-position: 0% 100%; }
+.portfolio__card--br .portfolio__card-img { background-position: 100% 100%; }
+.portfolio__card-info { padding: 18px 24px; border-top: 1px solid var(--rule); display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.portfolio__trade { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--red); }
+.portfolio__name { font-size: 14px; font-weight: 700; color: var(--black); }
+.portfolio__loc { font-size: 13px; color: var(--muted); margin-left: auto; }
+.portfolio__cta { padding: 40px 0 88px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+.portfolio__cta p { font-size: 18px; font-weight: 700; color: var(--black); letter-spacing: -.01em; }
 
 
 /* ─── PAIN ─── */
@@ -305,10 +311,7 @@ a { color: inherit; text-decoration: none; }
   .stats-bar__inner { grid-template-columns: repeat(2, 1fr); }
   .stat-item:nth-child(2) { border-right: none; }
   .stat-item:nth-child(3) { border-right: 1px solid rgba(255,255,255,.07); }
-  .portfolio__credits { grid-template-columns: repeat(2, 1fr); }
-  .credit:nth-child(2) { border-right: none; }
-  .credit:nth-child(3) { border-top: 1px solid var(--rule); }
-  .credit:nth-child(4) { border-top: 1px solid var(--rule); }
+  .portfolio__card-img { height: 260px; }
   .pain__inner { grid-template-columns: 1fr; gap: 40px; }
   .offer__inner { grid-template-columns: 1fr; gap: 40px; }
   .offer__right { padding-top: 0; border-top: 1px solid var(--rule); padding-top: 40px; }
@@ -337,7 +340,8 @@ a { color: inherit; text-decoration: none; }
   .hero { padding: 56px 0 48px; }
   .hero__trust { flex-direction: column; align-items: flex-start; gap: 8px; }
   .hero__trust-dot { display: none; }
-  .portfolio__credits { grid-template-columns: 1fr 1fr; }
+  .portfolio__card-img { height: 190px; }
+  .portfolio__cta { flex-direction: column; align-items: flex-start; gap: 16px; padding-bottom: 60px; }
   .trades__grid { grid-template-columns: repeat(2, 1fr); }
   .process__steps { grid-template-columns: 1fr; }
 }
@@ -424,35 +428,48 @@ a { color: inherit; text-decoration: none; }
     <div class="wrap">
       <div class="portfolio__head reveal">
         <span class="eyebrow">Selected Work</span>
-        <h2 id="portfolio-heading">Tradie Websites We've Built</h2>
-        <p>High-converting sites designed to get your phone ringing from day one.</p>
+        <h2 id="portfolio-heading">Sites That Make Tradies The Obvious Choice</h2>
+        <p>Clean, fast, built to convert. Every site we deliver is designed to win jobs, not just exist online.</p>
       </div>
     </div>
-    <div class="portfolio__image reveal">
-      <img src="portfolio.png" alt="Portfolio of tradie websites built by Trade Kings Agency — landscaping, cabinetry, painting and cleaning businesses">
+    <div class="portfolio__grid reveal">
+      <article class="portfolio__card portfolio__card--tl">
+        <div class="portfolio__card-img" role="img" aria-label="Natura Landscapes website hero"></div>
+        <div class="portfolio__card-info">
+          <span class="portfolio__trade">Landscaping</span>
+          <strong class="portfolio__name">Natura Landscapes</strong>
+          <span class="portfolio__loc">South Perth, WA</span>
+        </div>
+      </article>
+      <article class="portfolio__card portfolio__card--tr">
+        <div class="portfolio__card-img" role="img" aria-label="Maison Cabinetry website hero"></div>
+        <div class="portfolio__card-info">
+          <span class="portfolio__trade">Cabinetry</span>
+          <strong class="portfolio__name">Maison Cabinetry</strong>
+          <span class="portfolio__loc">Cottesloe, WA</span>
+        </div>
+      </article>
+      <article class="portfolio__card portfolio__card--bl">
+        <div class="portfolio__card-img" role="img" aria-label="Summit Painting website hero"></div>
+        <div class="portfolio__card-info">
+          <span class="portfolio__trade">Painting</span>
+          <strong class="portfolio__name">Summit Painting Co.</strong>
+          <span class="portfolio__loc">Fremantle, WA</span>
+        </div>
+      </article>
+      <article class="portfolio__card portfolio__card--br">
+        <div class="portfolio__card-img" role="img" aria-label="PureSpace Cleaning website hero"></div>
+        <div class="portfolio__card-info">
+          <span class="portfolio__trade">Cleaning</span>
+          <strong class="portfolio__name">PureSpace Cleaning</strong>
+          <span class="portfolio__loc">Subiaco, WA</span>
+        </div>
+      </article>
     </div>
     <div class="wrap">
-      <div class="portfolio__credits">
-        <div class="credit">
-          <span class="credit__trade">Landscaping</span>
-          <span class="credit__name">Evergreen Landscapes</span>
-          <span class="credit__loc">Perth, WA</span>
-        </div>
-        <div class="credit">
-          <span class="credit__trade">Cabinetry</span>
-          <span class="credit__name">Kent &amp; Co Cabinetry</span>
-          <span class="credit__loc">Subiaco, WA</span>
-        </div>
-        <div class="credit">
-          <span class="credit__trade">Painting</span>
-          <span class="credit__name">True Coat Painting</span>
-          <span class="credit__loc">Fremantle, WA</span>
-        </div>
-        <div class="credit">
-          <span class="credit__trade">Cleaning</span>
-          <span class="credit__name">Lumière Cleaning</span>
-          <span class="credit__loc">Cottesloe, WA</span>
-        </div>
+      <div class="portfolio__cta reveal">
+        <p>Your trade. Your suburb. Your phone ringing.</p>
+        <a href="#contact" class="btn btn-red">Get My Free Quote</a>
       </div>
     </div>
   </section>
