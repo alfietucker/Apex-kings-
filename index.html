@@ -9,447 +9,369 @@
 <link rel="canonical" href="https://tradekingsagency.com.au/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Trade Kings Agency — Perth Tradie Websites">
-<meta property="og:description" content="Websites built for tradies, by people who understand the trade. From $997, live in 7 days.">
+<meta property="og:description" content="Websites for Perth tradies from $997. Live in 7 days or your money back.">
 <meta property="og:url" content="https://tradekingsagency.com.au/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Trade Kings Agency — Perth Tradie Websites">
-<meta name="twitter:description" content="High-converting tradie websites from $997. Perth & WA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Trade Kings Agency",
-  "description": "Web design agency specialising in websites for tradies across Perth and Western Australia.",
-  "url": "https://tradekingsagency.com.au",
-  "telephone": "+61400000000",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Perth",
-    "addressRegion": "WA",
-    "addressCountry": "AU"
-  },
-  "areaServed": "Western Australia",
-  "priceRange": "$$"
-}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Trade Kings Agency","description":"Web design for Perth tradies.","url":"https://tradekingsagency.com.au","telephone":"+61400000000","address":{"@type":"PostalAddress","addressLocality":"Perth","addressRegion":"WA","addressCountry":"AU"},"areaServed":"Western Australia"}
 </script>
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much does a tradie website cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our tradie websites start at $997 one-time. No monthly fees unless you want hosting, which is optional at a flat rate."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does it take to build my website?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "7 business days from the time we receive your content. We guarantee it in writing or you get a full refund."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I own my website?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. 100%. The code, the domain, the hosting. Zero lock-in if you ever leave."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you work with tradies outside Perth?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We're Perth-based but work with tradies across all of WA. Regional areas welcome."
-      }
-    }
-  ]
-}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does a tradie website cost?","acceptedAnswer":{"@type":"Answer","text":"From $997 one-time. No monthly fees."}},{"@type":"Question","name":"How long does it take?","acceptedAnswer":{"@type":"Answer","text":"7 business days from receiving your content, guaranteed in writing."}}]}
 </script>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --black:  #111111;
   --red:    #C01313;
-  --gold:   #D4A017;
-  --white:  #FFFFFF;
-  --cream:  #F7F6F3;
+  --black:  #111111;
+  --ink:    #1E2530;
   --body:   #374151;
   --muted:  #6B7280;
   --rule:   #E5E7EB;
+  --cream:  #F8F7F4;
+  --white:  #FFFFFF;
   --max:    1160px;
-  --px:     40px;
+  --px:     48px;
 }
 
 html { scroll-behavior: smooth; }
-
-body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 17px;
-  line-height: 1.7;
-  color: var(--body);
-  background: var(--white);
-  -webkit-font-smoothing: antialiased;
-}
-
+body { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 17px; line-height: 1.7; color: var(--body); background: var(--white); -webkit-font-smoothing: antialiased; }
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--px); }
 
-.wrap {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 var(--px);
-}
-
-.btn {
-  display: inline-block;
-  font-family: inherit;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1;
-  padding: 15px 28px;
-  border-radius: 100px;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: background 0.18s, color 0.18s, border-color 0.18s;
-  white-space: nowrap;
-}
-.btn-red { background: var(--red); color: var(--white); border-color: var(--red); }
+/* BUTTONS */
+.btn { display: inline-block; font-family: inherit; font-size: 14px; font-weight: 700; line-height: 1; padding: 14px 26px; border-radius: 100px; border: 2px solid transparent; cursor: pointer; transition: background .18s, color .18s, border-color .18s; white-space: nowrap; letter-spacing: .01em; }
+.btn-red  { background: var(--red); color: var(--white); border-color: var(--red); }
 .btn-red:hover { background: #a01010; border-color: #a01010; }
+.btn-dark { background: var(--black); color: var(--white); border-color: var(--black); }
+.btn-dark:hover { background: #333; border-color: #333; }
+.btn-ghost { background: transparent; color: var(--black); border-color: var(--rule); }
+.btn-ghost:hover { border-color: var(--black); }
+.btn-ghost-white { background: transparent; color: var(--white); border-color: rgba(255,255,255,.35); }
+.btn-ghost-white:hover { border-color: var(--white); }
 
-.link-arrow {
-  font-size: 15px;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  transition: gap 0.18s;
-}
-.link-arrow:hover { gap: 10px; }
+.eyebrow { display: block; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
 
-.eyebrow {
-  display: block;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--red);
-  margin-bottom: 16px;
-}
-.eyebrow-gold { color: var(--gold); }
-.eyebrow-dim  { color: rgba(255,255,255,0.45); }
-
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity .5s ease, transform .5s ease; }
 .reveal.in { opacity: 1; transform: none; }
 
 /* NAV */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: var(--white);
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-.site-header.scrolled { border-bottom-color: var(--rule); box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
-.nav {
-  display: flex;
-  align-items: center;
-  height: 72px;
-  gap: 40px;
-}
-.nav__logo {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.nav__logo img { width: 48px; height: 48px; object-fit: contain; }
-.nav__logo-text {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--black);
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-}
-.nav__logo-text span {
-  display: block;
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.nav__links {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  list-style: none;
-  margin: 0 auto;
-}
-.nav__links a { font-size: 14px; color: var(--body); transition: color 0.15s; }
+.site-header { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid transparent; transition: border-color .2s, box-shadow .2s; }
+.site-header.scrolled { border-bottom-color: var(--rule); box-shadow: 0 1px 12px rgba(0,0,0,.06); }
+.nav { display: flex; align-items: center; height: 68px; gap: 32px; }
+.nav__logo { flex-shrink: 0; display: flex; align-items: center; gap: 10px; }
+.nav__logo img { width: 44px; height: 44px; object-fit: contain; }
+.nav__logo-name { font-size: 14px; font-weight: 700; color: var(--black); line-height: 1.2; letter-spacing: -.01em; }
+.nav__logo-name small { display: block; font-size: 10px; font-weight: 400; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+.nav__links { display: flex; align-items: center; gap: 28px; list-style: none; margin: 0 auto; }
+.nav__links a { font-size: 14px; color: var(--body); transition: color .15s; }
 .nav__links a:hover { color: var(--black); }
-.nav__right { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
-.nav__phone { font-size: 14px; font-weight: 700; color: var(--black); }
+.nav__right { display: flex; align-items: center; gap: 16px; flex-shrink: 0; }
+.nav__phone { font-size: 14px; font-weight: 700; color: var(--black); transition: color .15s; }
 .nav__phone:hover { color: var(--red); }
 .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 6px; margin-left: auto; }
-.hamburger span { display: block; width: 24px; height: 2px; background: var(--black); margin: 5px 0; transition: all 0.25s; }
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--black); margin: 5px 0; transition: all .22s; }
 .hamburger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-.nav-drawer { display: none; position: fixed; top: 72px; left: 0; right: 0; background: var(--white); border-top: 1px solid var(--rule); padding: 24px var(--px) 32px; z-index: 99; box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+.nav-drawer { display: none; position: fixed; top: 68px; left: 0; right: 0; background: var(--white); border-top: 1px solid var(--rule); padding: 20px var(--px) 28px; z-index: 99; box-shadow: 0 8px 24px rgba(0,0,0,.1); }
 .nav-drawer.open { display: block; }
 .nav-drawer a { display: block; font-size: 16px; font-weight: 700; color: var(--black); padding: 12px 0; border-bottom: 1px solid var(--rule); }
-.nav-drawer .btn { margin-top: 20px; display: block; text-align: center; }
+.nav-drawer .btn { margin-top: 18px; display: block; text-align: center; }
 
 /* HERO */
-.hero { background: var(--black); padding: 96px 0 0; overflow: hidden; }
-.hero__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-.hero__h1 {
-  font-size: clamp(38px, 4.5vw, 58px);
-  font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.025em;
-  color: var(--white);
-  margin-bottom: 24px;
-}
+.hero { background: var(--white); padding: 80px 0 0; }
+.hero__inner { display: grid; grid-template-columns: 1fr 420px; gap: 64px; align-items: center; }
+.hero__text .eyebrow { color: var(--muted); }
+.hero__h1 { font-size: clamp(36px, 4.5vw, 58px); font-weight: 700; line-height: 1.07; letter-spacing: -.03em; color: var(--black); margin-bottom: 22px; }
 .hero__h1 em { font-style: normal; color: var(--red); }
-.hero__sub { font-size: 18px; line-height: 1.65; color: rgba(255,255,255,0.6); margin-bottom: 36px; max-width: 460px; }
-.hero__actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
-.hero__actions .link-arrow { color: rgba(255,255,255,0.6); }
-.hero__actions .link-arrow:hover { color: var(--white); }
-.hero__visual { display: flex; flex-direction: column; }
-.hero__browser { background: #1E1E1E; border-radius: 8px; overflow: hidden; border: 1px solid #2E2E2E; }
-.hero__browser-bar { background: #2A2A2A; padding: 10px 14px; display: flex; align-items: center; gap: 6px; }
-.hero__browser-dot { width: 10px; height: 10px; border-radius: 50%; }
-.hero__browser-dot:nth-child(1) { background: #FF5F57; }
-.hero__browser-dot:nth-child(2) { background: #FEBC2E; }
-.hero__browser-dot:nth-child(3) { background: #28C840; }
-.hero__browser-url { flex: 1; background: #3A3A3A; border-radius: 4px; padding: 5px 10px; font-size: 11px; color: rgba(255,255,255,0.35); font-family: monospace; margin-left: 8px; }
-.hero__browser-screen { height: 240px; background: #161616; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
-.hero__browser-screen::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,255,255,0.025) 39px, rgba(255,255,255,0.025) 40px);
-}
-.hero__browser-label { text-align: center; z-index: 1; }
-.hero__browser-label strong { display: block; font-size: 22px; font-weight: 700; color: var(--white); letter-spacing: -0.02em; margin-bottom: 4px; }
-.hero__browser-label span { font-size: 12px; color: var(--red); text-transform: uppercase; letter-spacing: 0.1em; }
-.hero__browser-badge { position: absolute; top: 14px; right: 14px; background: var(--red); color: var(--white); font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 9px; }
-.hero__stats { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid #1E1E1E; margin-top: 80px; }
-.hero__stat { padding: 28px 0; text-align: center; border-right: 1px solid #1E1E1E; }
-.hero__stat:last-child { border-right: none; }
-.hero__stat-num { display: block; font-size: 28px; font-weight: 700; color: var(--white); letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
-.hero__stat-label { font-size: 12px; color: rgba(255,255,255,0.35); letter-spacing: 0.06em; text-transform: uppercase; }
+.hero__sub { font-size: 18px; color: var(--body); line-height: 1.65; margin-bottom: 36px; max-width: 440px; }
+.hero__actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.hero__link { font-size: 14px; font-weight: 700; color: var(--body); display: inline-flex; align-items: center; gap: 5px; transition: color .15s, gap .15s; }
+.hero__link:hover { color: var(--black); gap: 9px; }
+
+/* Hero visual */
+.hero__visual { position: relative; }
+.hero__logo-wrap { position: relative; display: flex; align-items: center; justify-content: center; }
+.hero__logo-bg { width: 380px; height: 380px; border-radius: 50%; background: var(--cream); display: flex; align-items: center; justify-content: center; position: relative; }
+.hero__logo-bg::before { content: ''; position: absolute; inset: 12px; border-radius: 50%; border: 1px solid var(--rule); }
+.hero__logo-img { width: 260px; height: 260px; object-fit: contain; filter: drop-shadow(0 8px 24px rgba(0,0,0,.15)); }
+.hero__badge { position: absolute; bottom: 32px; right: -8px; background: var(--white); border: 1px solid var(--rule); padding: 14px 18px; box-shadow: 0 4px 16px rgba(0,0,0,.08); min-width: 130px; }
+.hero__badge-num { font-size: 26px; font-weight: 700; color: var(--black); letter-spacing: -.03em; line-height: 1; margin-bottom: 2px; }
+.hero__badge-label { font-size: 11px; color: var(--muted); letter-spacing: .05em; text-transform: uppercase; }
+.hero__badge2 { position: absolute; top: 28px; left: -12px; background: var(--red); padding: 14px 18px; min-width: 130px; }
+.hero__badge2 .hero__badge-num { color: var(--white); }
+.hero__badge2 .hero__badge-label { color: rgba(255,255,255,.65); }
+
+/* Stats strip */
+.stats { background: var(--black); }
+.stats__inner { display: grid; grid-template-columns: repeat(4, 1fr); }
+.stat { padding: 28px 0; text-align: center; border-right: 1px solid rgba(255,255,255,.08); }
+.stat:last-child { border-right: none; }
+.stat__num { display: block; font-size: 26px; font-weight: 700; color: var(--white); letter-spacing: -.02em; line-height: 1; margin-bottom: 5px; }
+.stat__label { font-size: 11px; color: rgba(255,255,255,.4); letter-spacing: .07em; text-transform: uppercase; }
+
+/* PORTFOLIO GALLERY */
+.portfolio { padding: 96px 0; background: var(--white); }
+.portfolio__head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 48px; }
+.portfolio__head h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.15; max-width: 480px; }
+.portfolio__head p { font-size: 15px; color: var(--muted); max-width: 240px; text-align: right; line-height: 1.6; }
+.gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.gallery__big { grid-row: span 2; }
+
+/* Gallery card */
+.gcard { background: var(--white); border: 1px solid var(--rule); overflow: hidden; transition: box-shadow .25s, transform .25s; }
+.gcard:hover { box-shadow: 0 12px 40px rgba(0,0,0,.1); transform: translateY(-3px); }
+.gcard__browser { background: #1A1A1A; }
+.gcard__bar { background: #242424; padding: 10px 14px; display: flex; align-items: center; gap: 6px; }
+.gcard__dot { width: 9px; height: 9px; border-radius: 50%; }
+.gcard__dot:nth-child(1) { background: #FF5F57; }
+.gcard__dot:nth-child(2) { background: #FEBC2E; }
+.gcard__dot:nth-child(3) { background: #28C840; }
+.gcard__url { flex: 1; background: #333; border-radius: 3px; padding: 4px 10px; font-size: 10px; color: rgba(255,255,255,.3); font-family: monospace; margin-left: 8px; overflow: hidden; white-space: nowrap; }
+.gcard__screen { overflow: hidden; }
+.gallery__big .gcard__screen { height: 360px; }
+.gallery .gcard:not(.gallery__big) .gcard__screen { height: 168px; }
+
+/* Mock site: Plumber – Navy & White */
+.mock-plumber { background: #F0F4FA; display: flex; flex-direction: column; }
+.mock-plumber .m-nav { background: #1B3260; height: 30px; display: flex; align-items: center; padding: 0 14px; gap: 8px; flex-shrink: 0; }
+.mock-plumber .m-nav-logo { width: 14px; height: 14px; border-radius: 50%; background: #fff; opacity: .9; }
+.mock-plumber .m-nav-links { display: flex; gap: 6px; margin-left: auto; }
+.mock-plumber .m-nav-link { width: 24px; height: 5px; background: rgba(255,255,255,.3); border-radius: 2px; }
+.mock-plumber .m-nav-cta { width: 40px; height: 18px; background: #2A7DE1; border-radius: 2px; margin-left: 6px; }
+.mock-plumber .m-hero { background: #E8EFF9; flex: 1; padding: 18px 18px 14px; display: flex; flex-direction: column; gap: 8px; }
+.mock-plumber .m-eyebrow { width: 60px; height: 6px; background: #2A7DE1; border-radius: 1px; opacity: .7; }
+.mock-plumber .m-h1 { width: 80%; height: 14px; background: #1B3260; border-radius: 2px; }
+.mock-plumber .m-h1b { width: 60%; height: 14px; background: #1B3260; border-radius: 2px; }
+.mock-plumber .m-sub { width: 90%; height: 6px; background: rgba(27,50,96,.2); border-radius: 1px; margin-top: 4px; }
+.mock-plumber .m-sub2 { width: 70%; height: 6px; background: rgba(27,50,96,.2); border-radius: 1px; }
+.mock-plumber .m-cta { width: 70px; height: 22px; background: #1B3260; border-radius: 2px; margin-top: 6px; }
+.mock-plumber .m-cards { display: flex; gap: 8px; padding: 12px 18px; background: #fff; }
+.mock-plumber .m-card { flex: 1; height: 36px; background: #F0F4FA; border: 1px solid #DCE6F5; border-radius: 2px; }
+
+/* Mock site: Electrician – Black & Amber */
+.mock-elec { background: #0D0D0D; display: flex; flex-direction: column; }
+.mock-elec .m-nav { background: #111; height: 30px; display: flex; align-items: center; padding: 0 14px; gap: 8px; flex-shrink: 0; border-bottom: 1px solid #222; }
+.mock-elec .m-nav-logo { width: 22px; height: 8px; background: #F59E0B; border-radius: 1px; }
+.mock-elec .m-nav-links { display: flex; gap: 6px; margin-left: auto; }
+.mock-elec .m-nav-link { width: 24px; height: 5px; background: rgba(255,255,255,.2); border-radius: 2px; }
+.mock-elec .m-nav-cta { width: 40px; height: 18px; background: #F59E0B; border-radius: 2px; margin-left: 6px; }
+.mock-elec .m-hero { background: #111; flex: 1; padding: 18px 18px 14px; display: flex; flex-direction: column; gap: 8px; }
+.mock-elec .m-eyebrow { width: 50px; height: 5px; background: #F59E0B; border-radius: 1px; }
+.mock-elec .m-h1 { width: 85%; height: 16px; background: #F59E0B; border-radius: 2px; }
+.mock-elec .m-h1b { width: 55%; height: 16px; background: rgba(245,158,11,.5); border-radius: 2px; }
+.mock-elec .m-sub { width: 88%; height: 5px; background: rgba(255,255,255,.15); border-radius: 1px; margin-top: 6px; }
+.mock-elec .m-sub2 { width: 65%; height: 5px; background: rgba(255,255,255,.1); border-radius: 1px; }
+.mock-elec .m-cta { width: 70px; height: 22px; background: #F59E0B; border-radius: 2px; margin-top: 8px; }
+.mock-elec .m-cards { display: flex; gap: 6px; padding: 10px 14px; background: #1A1A1A; }
+.mock-elec .m-card { flex: 1; height: 32px; background: #242424; border: 1px solid #2E2E2E; border-radius: 2px; }
+
+/* Mock site: Builder – Earthy Green */
+.mock-build { background: #F4F0E8; display: flex; flex-direction: column; }
+.mock-build .m-nav { background: #2C3828; height: 30px; display: flex; align-items: center; padding: 0 14px; gap: 8px; flex-shrink: 0; }
+.mock-build .m-nav-logo { width: 28px; height: 8px; background: rgba(255,255,255,.8); border-radius: 1px; }
+.mock-build .m-nav-links { display: flex; gap: 6px; margin-left: auto; }
+.mock-build .m-nav-link { width: 22px; height: 5px; background: rgba(255,255,255,.25); border-radius: 2px; }
+.mock-build .m-nav-cta { width: 44px; height: 18px; background: #4A7C59; border-radius: 2px; margin-left: 6px; }
+.mock-build .m-hero { background: #F4F0E8; flex: 1; padding: 18px 18px 12px; display: flex; flex-direction: column; gap: 8px; }
+.mock-build .m-eyebrow { width: 55px; height: 5px; background: #4A7C59; border-radius: 1px; opacity: .8; }
+.mock-build .m-h1 { width: 82%; height: 13px; background: #2C3828; border-radius: 2px; }
+.mock-build .m-h1b { width: 60%; height: 13px; background: #2C3828; border-radius: 2px; }
+.mock-build .m-sub { width: 90%; height: 5px; background: rgba(44,56,40,.2); border-radius: 1px; margin-top: 5px; }
+.mock-build .m-sub2 { width: 68%; height: 5px; background: rgba(44,56,40,.15); border-radius: 1px; }
+.mock-build .m-cta { width: 68px; height: 20px; background: #4A7C59; border-radius: 2px; margin-top: 7px; }
+.mock-build .m-cards { display: flex; gap: 8px; padding: 12px 18px; background: #fff; }
+.mock-build .m-card { flex: 1; height: 34px; background: #F4F0E8; border: 1px solid #E0D9CC; border-radius: 2px; }
+
+/* Mock site: Painter – White & Red */
+.mock-paint { background: #F9F7F4; display: flex; flex-direction: column; }
+.mock-paint .m-nav { background: #fff; height: 30px; display: flex; align-items: center; padding: 0 14px; gap: 8px; flex-shrink: 0; border-bottom: 1px solid #eee; }
+.mock-paint .m-nav-logo { width: 28px; height: 7px; background: var(--red); border-radius: 1px; opacity: .85; }
+.mock-paint .m-nav-links { display: flex; gap: 6px; margin-left: auto; }
+.mock-paint .m-nav-link { width: 22px; height: 5px; background: #ccc; border-radius: 2px; }
+.mock-paint .m-nav-cta { width: 38px; height: 18px; background: var(--red); border-radius: 2px; margin-left: 6px; }
+.mock-paint .m-hero { background: #F9F7F4; flex: 1; padding: 18px 18px 12px; display: flex; flex-direction: column; gap: 7px; }
+.mock-paint .m-eyebrow { width: 48px; height: 5px; background: var(--red); border-radius: 1px; opacity: .7; }
+.mock-paint .m-h1 { width: 78%; height: 13px; background: #111; border-radius: 2px; }
+.mock-paint .m-h1b { width: 58%; height: 13px; background: #111; border-radius: 2px; }
+.mock-paint .m-sub { width: 88%; height: 5px; background: #ccc; border-radius: 1px; margin-top: 5px; }
+.mock-paint .m-sub2 { width: 65%; height: 5px; background: #ddd; border-radius: 1px; }
+.mock-paint .m-cta { width: 64px; height: 20px; background: var(--red); border-radius: 10px; margin-top: 7px; }
+.mock-paint .m-cards { display: flex; gap: 8px; padding: 12px 18px; background: #fff; }
+.mock-paint .m-card { flex: 1; height: 32px; background: #F5F5F5; border: 1px solid #E8E8E8; border-radius: 2px; }
+
+/* Gallery card info */
+.gcard__info { padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--rule); }
+.gcard__meta {}
+.gcard__trade { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--red); margin-bottom: 3px; }
+.gcard__name { font-size: 15px; font-weight: 700; color: var(--black); }
+.gcard__location { font-size: 12px; color: var(--muted); }
+.gcard__arrow { width: 32px; height: 32px; border: 1px solid var(--rule); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--muted); transition: all .2s; flex-shrink: 0; }
+.gcard:hover .gcard__arrow { background: var(--black); border-color: var(--black); color: var(--white); }
 
 /* PAIN */
-.pain { padding: 100px 0; background: var(--white); }
-.pain__head { max-width: 560px; margin-bottom: 60px; }
-.pain__head h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 700; color: var(--black); line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 12px; }
-.pain__head p { color: var(--muted); font-size: 16px; }
-.pain__list { list-style: none; counter-reset: pain; border-top: 1px solid var(--rule); display: grid; grid-template-columns: 1fr 1fr; }
-.pain__item { counter-increment: pain; padding: 36px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 52px 1fr; gap: 20px; align-items: start; }
-.pain__item:nth-child(odd)  { padding-right: 60px; border-right: 1px solid var(--rule); }
-.pain__item:nth-child(even) { padding-left: 60px; }
-.pain__num { font-size: 13px; font-weight: 700; color: var(--red); letter-spacing: 0.05em; padding-top: 3px; }
-.pain__num::before { content: counter(pain, decimal-leading-zero); }
-.pain__content strong { display: block; font-size: 17px; font-weight: 700; color: var(--black); margin-bottom: 6px; line-height: 1.3; }
-.pain__content p { font-size: 15px; color: var(--muted); line-height: 1.6; }
+.pain { padding: 96px 0; background: var(--cream); }
+.pain__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.pain__left h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.15; margin-bottom: 16px; }
+.pain__left p { color: var(--muted); font-size: 16px; line-height: 1.7; margin-bottom: 32px; }
+.pain__right { padding-top: 8px; }
+.pain__list { list-style: none; counter-reset: pain; }
+.pain__item { counter-increment: pain; display: flex; gap: 20px; padding: 24px 0; border-bottom: 1px solid var(--rule); align-items: flex-start; }
+.pain__item:first-child { border-top: 1px solid var(--rule); }
+.pain__n { font-size: 12px; font-weight: 700; color: var(--red); letter-spacing: .06em; padding-top: 3px; flex-shrink: 0; }
+.pain__n::before { content: counter(pain, decimal-leading-zero); }
+.pain__copy strong { display: block; font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 4px; line-height: 1.3; }
+.pain__copy p { font-size: 14px; color: var(--muted); line-height: 1.6; }
 
-/* OFFER */
-.offer { padding: 100px 0; background: var(--black); }
-.offer__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: start; }
-.offer__left h2 { font-size: clamp(30px, 3.2vw, 44px); font-weight: 700; color: var(--white); line-height: 1.12; letter-spacing: -0.02em; margin-bottom: 20px; }
-.offer__left h2 em { font-style: normal; color: var(--gold); }
-.offer__left > p { color: rgba(255,255,255,0.55); font-size: 16px; margin-bottom: 36px; line-height: 1.7; }
-.offer__list { list-style: none; margin-bottom: 40px; }
-.offer__list li { display: flex; align-items: flex-start; gap: 14px; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.07); color: rgba(255,255,255,0.8); font-size: 15px; line-height: 1.5; }
-.offer__list li:last-child { border-bottom: none; }
-.offer__tick { flex-shrink: 0; width: 18px; height: 18px; margin-top: 2px; color: var(--gold); }
-.offer__right { padding: 40px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09); }
-.offer__price-label { font-size: 12px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
-.offer__price { font-size: 64px; font-weight: 700; color: var(--white); letter-spacing: -0.04em; line-height: 1; margin-bottom: 6px; }
-.offer__price-note { font-size: 14px; color: rgba(255,255,255,0.35); margin-bottom: 32px; }
-.offer__guarantee { padding: 20px; background: rgba(192,19,19,0.1); border: 1px solid rgba(192,19,19,0.25); margin-bottom: 28px; }
-.offer__guarantee strong { display: block; font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
-.offer__guarantee p { font-size: 13px; color: rgba(255,255,255,0.5); margin: 0; line-height: 1.5; }
-.offer__note { margin-top: 14px; font-size: 12px; color: rgba(255,255,255,0.2); text-align: center; }
-
-/* PORTFOLIO */
-.portfolio { padding: 100px 0; background: var(--cream); }
-.portfolio__head { margin-bottom: 56px; }
-.portfolio__head h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 700; color: var(--black); letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 12px; }
-.portfolio__head p { color: var(--muted); font-size: 16px; }
-.portfolio__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.portfolio__item { background: var(--white); border: 1px solid var(--rule); }
-.portfolio__mock { background: #1A1A1A; }
-.portfolio__mock-bar { background: #242424; padding: 9px 12px; display: flex; align-items: center; gap: 6px; }
-.portfolio__mock-dot { width: 8px; height: 8px; border-radius: 50%; }
-.portfolio__mock-dot:nth-child(1) { background: #FF5F57; }
-.portfolio__mock-dot:nth-child(2) { background: #FEBC2E; }
-.portfolio__mock-dot:nth-child(3) { background: #28C840; }
-.portfolio__mock-screen { height: 170px; display: flex; align-items: center; justify-content: center; }
-.portfolio__coming-text { text-align: center; }
-.portfolio__coming-text strong { display: block; font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.2); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; }
-.portfolio__coming-text span { font-size: 11px; color: rgba(255,255,255,0.1); letter-spacing: 0.06em; text-transform: uppercase; }
-.portfolio__info { padding: 20px 22px; }
-.portfolio__trade { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); margin-bottom: 4px; }
-.portfolio__name { font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 2px; }
-.portfolio__location { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
-.portfolio__link { font-size: 13px; font-weight: 700; color: var(--red); display: inline-flex; align-items: center; gap: 5px; transition: gap 0.15s; }
-.portfolio__link:hover { gap: 9px; }
+/* WHAT YOU GET */
+.offer { padding: 96px 0; background: var(--white); }
+.offer__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.offer__left h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.15; margin-bottom: 14px; }
+.offer__left > p { color: var(--muted); font-size: 16px; line-height: 1.7; margin-bottom: 32px; }
+.offer__list { list-style: none; }
+.offer__list li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid var(--rule); font-size: 15px; color: var(--body); }
+.offer__list li:first-child { border-top: 1px solid var(--rule); }
+.offer__tick { color: var(--red); flex-shrink: 0; margin-top: 3px; }
+.offer__right { background: var(--cream); padding: 40px; border: 1px solid var(--rule); }
+.offer__price-lbl { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+.offer__price { font-size: 68px; font-weight: 700; color: var(--black); letter-spacing: -.04em; line-height: 1; margin-bottom: 4px; }
+.offer__price-note { font-size: 14px; color: var(--muted); margin-bottom: 28px; }
+.offer__guar { padding: 18px 20px; border: 1px solid var(--rule); background: var(--white); margin-bottom: 24px; }
+.offer__guar strong { display: block; font-size: 14px; font-weight: 700; color: var(--black); margin-bottom: 3px; }
+.offer__guar p { font-size: 13px; color: var(--muted); line-height: 1.5; margin: 0; }
 
 /* PROCESS */
-.process { padding: 100px 0; background: var(--white); }
-.process__head { max-width: 520px; margin-bottom: 72px; }
-.process__head h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 700; color: var(--black); letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 12px; }
+.process { padding: 96px 0; background: var(--cream); }
+.process__head { max-width: 500px; margin-bottom: 64px; }
+.process__head h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.15; margin-bottom: 12px; }
 .process__head p { color: var(--muted); font-size: 16px; }
-.process__steps { display: grid; grid-template-columns: repeat(3, 1fr); position: relative; }
-.process__steps::before { content: ''; position: absolute; top: 28px; left: calc(16.67% + 20px); right: calc(16.67% + 20px); height: 1px; background: var(--rule); }
-.process__step { padding-right: 48px; position: relative; }
-.process__step:last-child { padding-right: 0; }
-.process__num-block { position: relative; margin-bottom: 24px; height: 56px; }
-.process__num-bg { font-size: 56px; font-weight: 700; color: #F0F0F0; line-height: 1; letter-spacing: -0.04em; position: absolute; left: 0; top: 0; }
-.process__num-label { font-size: 13px; font-weight: 700; color: var(--red); letter-spacing: 0.06em; position: absolute; left: 2px; top: 4px; }
-.process__step h3 { font-size: 18px; font-weight: 700; color: var(--black); margin-bottom: 10px; line-height: 1.3; }
-.process__step p { font-size: 15px; color: var(--muted); line-height: 1.65; }
-
-/* WHY */
-.why { padding: 100px 0; background: var(--cream); }
-.why__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
-.why__left h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 700; color: var(--black); letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 36px; }
-.why__list { list-style: none; }
-.why__list li { display: flex; align-items: flex-start; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--rule); font-size: 15px; color: var(--body); line-height: 1.55; }
-.why__list li:first-child { border-top: 1px solid var(--rule); }
-.why__check { flex-shrink: 0; width: 18px; height: 18px; margin-top: 2px; color: var(--red); }
-.why__right {}
-.why__pull { font-size: clamp(30px, 3.5vw, 48px); font-weight: 700; color: var(--black); letter-spacing: -0.03em; line-height: 1.08; margin-bottom: 20px; }
-.why__pull em { font-style: normal; color: var(--red); }
-.why__pull-sub { font-size: 16px; color: var(--muted); line-height: 1.7; }
+.process__steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.process__step { background: var(--white); padding: 36px 32px; }
+.process__step-n { font-size: 40px; font-weight: 700; color: var(--rule); letter-spacing: -.03em; line-height: 1; margin-bottom: 20px; position: relative; }
+.process__step-n span { position: absolute; left: 0; top: 2px; font-size: 12px; font-weight: 700; color: var(--red); letter-spacing: .06em; }
+.process__step h3 { font-size: 17px; font-weight: 700; color: var(--black); margin-bottom: 8px; line-height: 1.3; }
+.process__step p { font-size: 14px; color: var(--muted); line-height: 1.65; }
 
 /* TESTIMONIALS */
-.testimonials { padding: 100px 0; background: var(--white); }
-.testimonials__head { margin-bottom: 56px; }
-.testimonials__head h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 700; color: var(--black); letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 12px; }
+.testimonials { padding: 96px 0; background: var(--white); }
+.testimonials__head { margin-bottom: 48px; }
+.testimonials__head h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.15; margin-bottom: 10px; }
 .testimonials__head p { color: var(--muted); font-size: 16px; }
-.testimonials__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-.testimonial { padding: 36px; border: 1px solid var(--rule); }
-.testimonial__trade { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); margin-bottom: 16px; }
-.testimonial__quote { font-size: 17px; font-style: italic; color: var(--black); line-height: 1.65; margin-bottom: 24px; }
-.testimonial__author { font-size: 14px; font-weight: 700; color: var(--muted); }
-.testimonials__note { margin-top: 24px; font-size: 13px; color: var(--muted); }
+.testimonials__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.testimonial { background: var(--white); padding: 36px 32px; }
+.testimonial__trade { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--red); margin-bottom: 16px; }
+.testimonial__quote { font-size: 16px; font-style: italic; color: var(--black); line-height: 1.7; margin-bottom: 20px; }
+.testimonial__author { font-size: 13px; font-weight: 700; color: var(--muted); }
+.testimonials__note { margin-top: 20px; font-size: 12px; color: var(--muted); }
 
 /* TRADES */
 .trades { padding: 80px 0; background: var(--cream); }
-.trades__head { margin-bottom: 40px; }
-.trades__head h2 { font-size: clamp(24px, 2.5vw, 34px); font-weight: 700; color: var(--black); letter-spacing: -0.02em; margin-bottom: 8px; }
+.trades__head { margin-bottom: 36px; }
+.trades__head h2 { font-size: clamp(22px, 2.4vw, 32px); font-weight: 700; color: var(--black); letter-spacing: -.02em; margin-bottom: 6px; }
 .trades__head p { color: var(--muted); font-size: 15px; }
-.trades__grid { display: grid; grid-template-columns: repeat(4, 1fr); border-left: 1px solid var(--rule); border-top: 1px solid var(--rule); }
-.trades__cell { border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 20px 24px; font-size: 15px; font-weight: 700; color: var(--black); transition: background 0.15s, color 0.15s; cursor: default; }
+.trades__grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
+.trades__cell { border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 18px 22px; font-size: 14px; font-weight: 700; color: var(--black); transition: background .15s, color .15s; cursor: default; }
 .trades__cell:hover { background: var(--black); color: var(--white); }
 
 /* PRICING */
-.pricing { padding: 100px 0; background: var(--white); }
-.pricing__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: start; }
-.pricing__left h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 700; color: var(--black); letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 16px; }
-.pricing__left > p { color: var(--muted); font-size: 16px; margin-bottom: 36px; line-height: 1.7; }
+.pricing { padding: 96px 0; background: var(--white); }
+.pricing__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.pricing__left h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.15; margin-bottom: 12px; }
+.pricing__left > p { color: var(--muted); font-size: 16px; line-height: 1.7; margin-bottom: 32px; }
 .pricing__includes { list-style: none; }
-.pricing__includes li { display: flex; align-items: flex-start; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--rule); font-size: 15px; color: var(--body); }
+.pricing__includes li { display: flex; gap: 10px; align-items: flex-start; padding: 11px 0; border-bottom: 1px solid var(--rule); font-size: 14px; color: var(--body); }
 .pricing__includes li:first-child { border-top: 1px solid var(--rule); }
-.tick { flex-shrink: 0; margin-top: 3px; color: var(--red); }
-.pricing__right { padding: 48px; background: var(--black); color: var(--white); }
-.pricing__price-label { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
-.pricing__amount { font-size: 72px; font-weight: 700; color: var(--white); letter-spacing: -0.04em; line-height: 1; margin-bottom: 6px; }
-.pricing__note { font-size: 14px; color: rgba(255,255,255,0.35); margin-bottom: 36px; }
-.pricing__guar { padding: 20px 22px; border: 1px solid rgba(255,255,255,0.09); margin-bottom: 28px; }
-.pricing__guar strong { display: block; font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
-.pricing__guar p { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.5; margin: 0; }
-.pricing__hosting { font-size: 12px; color: rgba(255,255,255,0.25); margin-top: 14px; line-height: 1.5; }
+.ptick { color: var(--red); flex-shrink: 0; margin-top: 3px; }
+.pricing__right { background: var(--black); padding: 40px; color: var(--white); }
+.pricing__lbl { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 10px; }
+.pricing__amount { font-size: 68px; font-weight: 700; color: var(--white); letter-spacing: -.04em; line-height: 1; margin-bottom: 4px; }
+.pricing__note { font-size: 13px; color: rgba(255,255,255,.35); margin-bottom: 28px; }
+.pricing__guar { padding: 18px 20px; border: 1px solid rgba(255,255,255,.1); margin-bottom: 24px; }
+.pricing__guar strong { display: block; font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 3px; }
+.pricing__guar p { font-size: 13px; color: rgba(255,255,255,.45); line-height: 1.5; margin: 0; }
+.pricing__host { font-size: 12px; color: rgba(255,255,255,.25); margin-top: 14px; line-height: 1.55; }
 
 /* FAQ */
-.faq { padding: 100px 0; background: var(--cream); }
-.faq__head { max-width: 520px; margin-bottom: 56px; }
-.faq__head h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 700; color: var(--black); letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 12px; }
+.faq { padding: 96px 0; background: var(--cream); }
+.faq__head { max-width: 500px; margin-bottom: 48px; }
+.faq__head h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.15; margin-bottom: 10px; }
 .faq__head p { color: var(--muted); font-size: 16px; }
 .faq__list { list-style: none; }
 .faq__item { border-bottom: 1px solid var(--rule); }
 .faq__item:first-child { border-top: 1px solid var(--rule); }
-.faq__btn { width: 100%; background: none; border: none; padding: 24px 0; display: flex; align-items: center; justify-content: space-between; gap: 24px; cursor: pointer; text-align: left; font-family: inherit; font-size: 17px; font-weight: 700; color: var(--black); line-height: 1.35; }
-.faq__icon { flex-shrink: 0; width: 20px; height: 20px; position: relative; }
-.faq__icon::before, .faq__icon::after { content: ''; position: absolute; background: var(--red); transition: transform 0.25s, opacity 0.25s; }
-.faq__icon::before { width: 2px; height: 14px; top: 3px; left: 9px; }
-.faq__icon::after  { width: 14px; height: 2px; top: 9px; left: 3px; }
+.faq__btn { width: 100%; background: none; border: none; padding: 22px 0; display: flex; align-items: center; justify-content: space-between; gap: 24px; cursor: pointer; text-align: left; font-family: inherit; font-size: 16px; font-weight: 700; color: var(--black); line-height: 1.35; }
+.faq__icon { flex-shrink: 0; width: 18px; height: 18px; position: relative; }
+.faq__icon::before, .faq__icon::after { content: ''; position: absolute; background: var(--red); transition: transform .22s, opacity .22s; }
+.faq__icon::before { width: 2px; height: 12px; top: 3px; left: 8px; }
+.faq__icon::after  { width: 12px; height: 2px; top: 8px; left: 3px; }
 .faq__item.open .faq__icon::before { transform: rotate(90deg); opacity: 0; }
-.faq__body { overflow: hidden; max-height: 0; transition: max-height 0.35s ease; }
-.faq__body-inner { padding: 0 0 24px; font-size: 16px; color: var(--body); line-height: 1.7; max-width: 640px; }
+.faq__body { overflow: hidden; max-height: 0; transition: max-height .32s ease; }
+.faq__body-inner { padding: 0 0 22px; font-size: 15px; color: var(--body); line-height: 1.7; max-width: 600px; }
 
 /* CONTACT */
-.contact { padding: 100px 0; background: var(--black); }
-.contact__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: start; }
-.contact__left h2 { font-size: clamp(30px, 3.5vw, 48px); font-weight: 700; color: var(--white); letter-spacing: -0.025em; line-height: 1.1; margin-bottom: 20px; }
-.contact__left > p { color: rgba(255,255,255,0.5); font-size: 16px; line-height: 1.7; margin-bottom: 40px; }
-.contact__phone-label { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
-.contact__phone a { font-size: 28px; font-weight: 700; color: var(--white); letter-spacing: -0.02em; transition: color 0.15s; }
+.contact { padding: 96px 0; background: var(--ink); }
+.contact__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.contact__left h2 { font-size: clamp(28px, 3.2vw, 44px); font-weight: 700; color: var(--white); letter-spacing: -.025em; line-height: 1.1; margin-bottom: 16px; }
+.contact__left > p { color: rgba(255,255,255,.5); font-size: 16px; line-height: 1.7; margin-bottom: 36px; }
+.contact__phone-lbl { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.35); margin-bottom: 6px; }
+.contact__phone a { font-size: 28px; font-weight: 700; color: var(--white); letter-spacing: -.02em; transition: color .15s; }
 .contact__phone a:hover { color: var(--red); }
-.contact__reply { margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.25); }
-.contact__form { display: flex; flex-direction: column; gap: 14px; }
-.contact__row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.contact__field { display: flex; flex-direction: column; gap: 6px; }
-.contact__label { font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.35); }
-.contact__input, .contact__select, .contact__textarea { font-family: inherit; font-size: 15px; color: var(--white); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 13px 16px; outline: none; transition: border-color 0.18s; -webkit-appearance: none; border-radius: 0; }
-.contact__input::placeholder, .contact__textarea::placeholder { color: rgba(255,255,255,0.18); }
+.contact__reply { margin-top: 10px; font-size: 12px; color: rgba(255,255,255,.25); }
+.contact__form { display: flex; flex-direction: column; gap: 12px; }
+.contact__row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.contact__field { display: flex; flex-direction: column; gap: 5px; }
+.contact__label { font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: rgba(255,255,255,.3); }
+.contact__input, .contact__select, .contact__textarea { font-family: inherit; font-size: 15px; color: var(--white); background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); padding: 12px 14px; outline: none; transition: border-color .18s; -webkit-appearance: none; border-radius: 0; }
+.contact__input::placeholder, .contact__textarea::placeholder { color: rgba(255,255,255,.18); }
 .contact__input:focus, .contact__select:focus, .contact__textarea:focus { border-color: var(--red); }
-.contact__select { color: rgba(255,255,255,0.55); }
+.contact__select { color: rgba(255,255,255,.5); }
 .contact__select option { color: var(--black); background: var(--white); }
-.contact__textarea { resize: vertical; min-height: 110px; }
-.contact__submit { margin-top: 4px; align-self: flex-start; font-family: inherit; font-size: 15px; font-weight: 700; background: var(--red); color: var(--white); border: none; padding: 15px 32px; border-radius: 100px; cursor: pointer; transition: background 0.18s; }
+.contact__textarea { resize: vertical; min-height: 100px; }
+.contact__submit { align-self: flex-start; font-family: inherit; font-size: 14px; font-weight: 700; background: var(--red); color: var(--white); border: none; padding: 14px 30px; border-radius: 100px; cursor: pointer; transition: background .18s; margin-top: 4px; }
 .contact__submit:hover { background: #a01010; }
 
 /* FOOTER */
-.site-footer { background: var(--black); border-top: 1px solid #1A1A1A; padding: 40px 0; }
+.site-footer { background: var(--black); border-top: 1px solid #1A1A1A; padding: 36px 0; }
 .footer__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-.footer__logo { display: flex; align-items: center; gap: 12px; }
-.footer__logo img { width: 40px; height: 40px; object-fit: contain; }
-.footer__logo-text { font-size: 13px; font-weight: 700; color: var(--white); line-height: 1.3; }
-.footer__logo-text span { display: block; font-size: 10px; font-weight: 400; color: rgba(255,255,255,0.25); letter-spacing: 0.08em; text-transform: uppercase; }
-.footer__links { display: flex; gap: 24px; list-style: none; }
-.footer__links a { font-size: 13px; color: rgba(255,255,255,0.3); transition: color 0.15s; }
+.footer__logo { display: flex; align-items: center; gap: 10px; }
+.footer__logo img { width: 36px; height: 36px; object-fit: contain; }
+.footer__logo-name { font-size: 13px; font-weight: 700; color: var(--white); line-height: 1.3; }
+.footer__logo-name small { display: block; font-size: 10px; font-weight: 400; color: rgba(255,255,255,.25); letter-spacing: .08em; text-transform: uppercase; }
+.footer__links { display: flex; gap: 22px; list-style: none; }
+.footer__links a { font-size: 13px; color: rgba(255,255,255,.3); transition: color .15s; }
 .footer__links a:hover { color: var(--white); }
-.footer__copy { font-size: 12px; color: rgba(255,255,255,0.2); line-height: 1.6; }
+.footer__copy { font-size: 12px; color: rgba(255,255,255,.2); text-align: right; line-height: 1.65; }
 
 /* RESPONSIVE */
 @media (max-width: 960px) {
-  :root { --px: 24px; }
+  :root { --px: 28px; }
   .hero__inner { grid-template-columns: 1fr; gap: 48px; }
-  .hero__visual { display: none; }
-  .hero__stats { grid-template-columns: repeat(2, 1fr); }
-  .hero__stat:nth-child(2) { border-right: none; }
-  .hero__stat:nth-child(3) { border-right: 1px solid #1E1E1E; }
-  .pain__list { grid-template-columns: 1fr; }
-  .pain__item:nth-child(odd) { padding-right: 0; border-right: none; }
-  .pain__item:nth-child(even) { padding-left: 0; }
-  .offer__inner { grid-template-columns: 1fr; gap: 48px; }
-  .portfolio__grid { grid-template-columns: 1fr 1fr; }
-  .process__steps { grid-template-columns: 1fr; gap: 40px; }
-  .process__steps::before { display: none; }
-  .why__inner { grid-template-columns: 1fr; gap: 48px; }
-  .testimonials__grid { grid-template-columns: 1fr; gap: 20px; }
+  .hero__logo-wrap { justify-content: flex-start; }
+  .hero__logo-bg { width: 280px; height: 280px; }
+  .hero__logo-img { width: 200px; height: 200px; }
+  .stats__inner { grid-template-columns: repeat(2, 1fr); }
+  .stat:nth-child(2) { border-right: none; }
+  .stat:nth-child(3) { border-right: 1px solid rgba(255,255,255,.08); }
+  .gallery { grid-template-columns: 1fr; }
+  .gallery__big { grid-row: span 1; }
+  .gallery .gcard:not(.gallery__big) .gcard__screen { height: 260px; }
+  .pain__inner { grid-template-columns: 1fr; gap: 40px; }
+  .offer__inner { grid-template-columns: 1fr; gap: 40px; }
+  .process__steps { grid-template-columns: 1fr; gap: 1px; }
+  .testimonials__grid { grid-template-columns: 1fr; gap: 1px; }
   .trades__grid { grid-template-columns: repeat(2, 1fr); }
-  .pricing__inner { grid-template-columns: 1fr; gap: 48px; }
-  .contact__inner { grid-template-columns: 1fr; gap: 48px; }
+  .pricing__inner { grid-template-columns: 1fr; gap: 40px; }
+  .contact__inner { grid-template-columns: 1fr; gap: 40px; }
   .contact__row { grid-template-columns: 1fr; }
   .footer__inner { flex-direction: column; align-items: flex-start; }
+  .footer__copy { text-align: left; }
+  .portfolio__head { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .portfolio__head p { text-align: left; max-width: 100%; }
 }
 @media (max-width: 640px) {
   :root { --px: 20px; }
@@ -457,11 +379,13 @@ a { color: inherit; text-decoration: none; }
   .nav__phone { display: none; }
   .nav__right .btn { display: none; }
   .hamburger { display: block; }
-  .hero { padding: 72px 0 0; }
-  .portfolio__grid { grid-template-columns: 1fr; }
+  .hero { padding: 60px 0 0; }
+  .hero__logo-bg { width: 240px; height: 240px; }
+  .hero__logo-img { width: 170px; height: 170px; }
+  .hero__badge, .hero__badge2 { display: none; }
+  .trades__grid { grid-template-columns: repeat(2, 1fr); }
   .offer__right { padding: 28px; }
   .pricing__right { padding: 28px; }
-  .process__step { padding-right: 0; }
 }
 </style>
 </head>
@@ -471,12 +395,12 @@ a { color: inherit; text-decoration: none; }
   <div class="wrap">
     <nav class="nav" aria-label="Main navigation">
       <a href="/" class="nav__logo" aria-label="Trade Kings Agency home">
-        <img src="logo.png" alt="Trade Kings Agency" width="48" height="48">
-        <span class="nav__logo-text">Trade Kings<span>Agency</span></span>
+        <img src="logo.png" alt="Trade Kings Agency" width="44" height="44">
+        <span class="nav__logo-name">Trade Kings<small>Agency</small></span>
       </a>
       <ul class="nav__links" role="list">
-        <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
@@ -490,11 +414,11 @@ a { color: inherit; text-decoration: none; }
     </nav>
   </div>
   <nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
-    <a href="#services">Services</a>
     <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
     <a href="#pricing">Pricing</a>
     <a href="#faq">FAQ</a>
-    <a href="tel:+61400000000">Call 0400 000 000</a>
+    <a href="tel:+61400000000">0400 000 000</a>
     <a href="#contact" class="btn btn-red">Get A Free Quote</a>
   </nav>
 </header>
@@ -505,146 +429,38 @@ a { color: inherit; text-decoration: none; }
     <div class="wrap">
       <div class="hero__inner">
         <div class="hero__text reveal">
-          <span class="eyebrow eyebrow-gold">Perth &amp; Western Australia</span>
+          <span class="eyebrow">Perth &amp; Western Australia</span>
           <h1 class="hero__h1">Stop Losing Jobs To Tradies With <em>Better Websites</em></h1>
-          <p class="hero__sub">We build high-converting websites for Perth tradies. One price, no lock-in, live in 7 days — or your money back.</p>
+          <p class="hero__sub">We build high-converting websites specifically for Perth tradies. One price, no lock-in, live in 7 days — or your money back.</p>
           <div class="hero__actions">
             <a href="#contact" class="btn btn-red">Get A Free Quote</a>
-            <a href="#portfolio" class="link-arrow" style="color:rgba(255,255,255,0.6);">See our work →</a>
+            <a href="#portfolio" class="hero__link">See our work →</a>
           </div>
         </div>
         <div class="hero__visual reveal">
-          <div class="hero__browser">
-            <div class="hero__browser-bar">
-              <div class="hero__browser-dot"></div>
-              <div class="hero__browser-dot"></div>
-              <div class="hero__browser-dot"></div>
-              <div class="hero__browser-url">www.yourbusiness.com.au</div>
+          <div class="hero__logo-wrap">
+            <div class="hero__logo-bg">
+              <img src="logo.png" alt="" class="hero__logo-img" aria-hidden="true">
             </div>
-            <div class="hero__browser-screen">
-              <div class="hero__browser-label">
-                <strong>Your Business Here</strong>
-                <span>Perth, WA</span>
-              </div>
-              <div class="hero__browser-badge">Live in 7 Days</div>
+            <div class="hero__badge">
+              <div class="hero__badge-num">$997</div>
+              <div class="hero__badge-label">Starting price</div>
+            </div>
+            <div class="hero__badge2">
+              <div class="hero__badge-num">7 days</div>
+              <div class="hero__badge-label">To go live</div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="hero__stats">
-      <div class="hero__stat">
-        <span class="hero__stat-num">$997</span>
-        <span class="hero__stat-label">Starting price</span>
-      </div>
-      <div class="hero__stat">
-        <span class="hero__stat-num">7 days</span>
-        <span class="hero__stat-label">To go live</span>
-      </div>
-      <div class="hero__stat">
-        <span class="hero__stat-num">$0</span>
-        <span class="hero__stat-label">Monthly fees</span>
-      </div>
-      <div class="hero__stat">
-        <span class="hero__stat-num">100%</span>
-        <span class="hero__stat-label">Perth-built</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="pain" id="services" aria-labelledby="pain-heading">
-    <div class="wrap">
-      <div class="pain__head reveal">
-        <span class="eyebrow">The Problem</span>
-        <h2 id="pain-heading">Your Website Is Costing You Jobs Every Week</h2>
-        <p>These are the four things killing your leads right now.</p>
-      </div>
-      <ul class="pain__list">
-        <li class="pain__item reveal">
-          <span class="pain__num"></span>
-          <div class="pain__content">
-            <strong>Your mate's nephew built it for free</strong>
-            <p>It shows. Customers judge your quality by your website before they ever pick up the phone.</p>
-          </div>
-        </li>
-        <li class="pain__item reveal">
-          <span class="pain__num"></span>
-          <div class="pain__content">
-            <strong>You're on page 3 while cheaper tradies get the calls</strong>
-            <p>Google ranks websites, not experience. A weak site means your competitors win jobs you should be getting.</p>
-          </div>
-        </li>
-        <li class="pain__item reveal">
-          <span class="pain__num"></span>
-          <div class="pain__content">
-            <strong>It looks fine on desktop. On mobile it's broken.</strong>
-            <p>Over 80% of people searching for a tradie are on their phone. If your site breaks, they call someone else.</p>
-          </div>
-        </li>
-        <li class="pain__item reveal">
-          <span class="pain__num"></span>
-          <div class="pain__content">
-            <strong>There's no reason to call you over the next bloke</strong>
-            <p>No reviews, no past work shown, no guarantee. Nothing that makes you the obvious choice.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="offer" id="what-you-get" aria-labelledby="offer-heading">
-    <div class="wrap">
-      <div class="offer__inner">
-        <div class="offer__left reveal">
-          <span class="eyebrow eyebrow-dim">What You Get</span>
-          <h2 id="offer-heading">Everything You Need To <em>Win The Job</em> Before You Pick Up The Phone</h2>
-          <p>One flat price. Everything included. Nothing left to guess.</p>
-          <ul class="offer__list">
-            <li>
-              <svg class="offer__tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Custom-designed website built around your trade and suburb
-            </li>
-            <li>
-              <svg class="offer__tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Mobile-first — looks sharp on every phone, tablet and desktop
-            </li>
-            <li>
-              <svg class="offer__tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              SEO set up for your exact trade and suburb from day one
-            </li>
-            <li>
-              <svg class="offer__tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Click-to-call button so customers reach you in one tap
-            </li>
-            <li>
-              <svg class="offer__tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Google Maps integration and Business Profile setup
-            </li>
-            <li>
-              <svg class="offer__tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Before &amp; after photo gallery to show your best work
-            </li>
-            <li>
-              <svg class="offer__tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Contact form and WhatsApp button wired up and tested
-            </li>
-            <li>
-              <svg class="offer__tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              You own it. No agency lock-in, no recurring CMS fees.
-            </li>
-          </ul>
-          <a href="#contact" class="btn btn-red">Get Started Today</a>
-        </div>
-        <div class="offer__right reveal">
-          <p class="offer__price-label">One-time investment</p>
-          <p class="offer__price">$997</p>
-          <p class="offer__price-note">No monthly fees. No hidden extras.</p>
-          <div class="offer__guarantee">
-            <strong>7-Day Live Guarantee</strong>
-            <p>Your site goes live within 7 business days of receiving your content — or we refund every dollar. In writing.</p>
-          </div>
-          <a href="#contact" class="btn btn-red" style="display:block;text-align:center;">Claim Your Spot</a>
-          <p class="offer__note">Limited spots each month.</p>
+    <div class="stats" style="margin-top:80px;">
+      <div class="wrap">
+        <div class="stats__inner">
+          <div class="stat"><span class="stat__num">$997</span><span class="stat__label">Starting price</span></div>
+          <div class="stat"><span class="stat__num">7 days</span><span class="stat__label">To go live</span></div>
+          <div class="stat"><span class="stat__num">$0</span><span class="stat__label">Monthly fees</span></div>
+          <div class="stat"><span class="stat__num">100%</span><span class="stat__label">Perth-built</span></div>
         </div>
       </div>
     </div>
@@ -653,74 +469,217 @@ a { color: inherit; text-decoration: none; }
   <section class="portfolio" id="portfolio" aria-labelledby="portfolio-heading">
     <div class="wrap">
       <div class="portfolio__head reveal">
-        <span class="eyebrow">Our Work</span>
-        <h2 id="portfolio-heading">Perth Tradies We've Built For</h2>
-        <p>Real websites for real tradies across Western Australia.</p>
+        <div>
+          <span class="eyebrow">Selected Work</span>
+          <h2 id="portfolio-heading">Perth Tradie Websites We've Built</h2>
+        </div>
+        <p>Each site designed for one purpose: getting your phone to ring.</p>
       </div>
-      <div class="portfolio__grid">
-        <article class="portfolio__item reveal">
-          <div class="portfolio__mock">
-            <div class="portfolio__mock-bar">
-              <div class="portfolio__mock-dot"></div>
-              <div class="portfolio__mock-dot"></div>
-              <div class="portfolio__mock-dot"></div>
+      <div class="gallery">
+
+        <article class="gcard gallery__big reveal">
+          <div class="gcard__browser">
+            <div class="gcard__bar">
+              <div class="gcard__dot"></div><div class="gcard__dot"></div><div class="gcard__dot"></div>
+              <div class="gcard__url">www.jtplumbing.com.au</div>
             </div>
-            <div class="portfolio__mock-screen">
-              <div class="portfolio__coming-text">
-                <strong>Coming Soon</strong>
-                <span>Case study in progress</span>
+            <div class="gcard__screen">
+              <div class="mock-plumber" style="height:100%;display:flex;flex-direction:column;">
+                <div class="m-nav"></div>
+                <div class="m-hero" style="flex:1;padding:24px 22px 18px;display:flex;flex-direction:column;gap:10px;">
+                  <div class="m-eyebrow"></div>
+                  <div class="m-h1"></div>
+                  <div class="m-h1b"></div>
+                  <div class="m-sub" style="margin-top:8px;"></div>
+                  <div class="m-sub2"></div>
+                  <div class="m-cta" style="margin-top:12px;"></div>
+                </div>
+                <div class="m-cards"></div>
               </div>
             </div>
           </div>
-          <div class="portfolio__info">
-            <p class="portfolio__trade">Plumber</p>
-            <p class="portfolio__name">Rapid Response Plumbing</p>
-            <p class="portfolio__location">Joondalup, WA</p>
-            <span class="portfolio__link">View live site →</span>
+          <div class="gcard__info">
+            <div class="gcard__meta">
+              <div class="gcard__trade">Plumber</div>
+              <div class="gcard__name">JT Plumbing Solutions</div>
+              <div class="gcard__location">Joondalup, WA</div>
+            </div>
+            <div class="gcard__arrow">→</div>
           </div>
         </article>
-        <article class="portfolio__item reveal">
-          <div class="portfolio__mock">
-            <div class="portfolio__mock-bar">
-              <div class="portfolio__mock-dot"></div>
-              <div class="portfolio__mock-dot"></div>
-              <div class="portfolio__mock-dot"></div>
+
+        <article class="gcard reveal">
+          <div class="gcard__browser">
+            <div class="gcard__bar">
+              <div class="gcard__dot"></div><div class="gcard__dot"></div><div class="gcard__dot"></div>
+              <div class="gcard__url">www.rapidsparkelectrical.com.au</div>
             </div>
-            <div class="portfolio__mock-screen">
-              <div class="portfolio__coming-text">
-                <strong>Coming Soon</strong>
-                <span>Case study in progress</span>
+            <div class="gcard__screen">
+              <div class="mock-elec" style="height:100%;display:flex;flex-direction:column;">
+                <div class="m-nav"></div>
+                <div class="m-hero" style="flex:1;padding:18px 18px 12px;display:flex;flex-direction:column;gap:8px;">
+                  <div class="m-eyebrow"></div>
+                  <div class="m-h1"></div>
+                  <div class="m-h1b"></div>
+                  <div class="m-sub" style="margin-top:6px;"></div>
+                  <div class="m-cta" style="margin-top:8px;"></div>
+                </div>
+                <div class="m-cards"></div>
               </div>
             </div>
           </div>
-          <div class="portfolio__info">
-            <p class="portfolio__trade">Electrician</p>
-            <p class="portfolio__name">Bright Spark Electrical</p>
-            <p class="portfolio__location">Fremantle, WA</p>
-            <span class="portfolio__link">View live site →</span>
+          <div class="gcard__info">
+            <div class="gcard__meta">
+              <div class="gcard__trade">Electrician</div>
+              <div class="gcard__name">Rapid Spark Electrical</div>
+              <div class="gcard__location">Fremantle, WA</div>
+            </div>
+            <div class="gcard__arrow">→</div>
           </div>
         </article>
-        <article class="portfolio__item reveal">
-          <div class="portfolio__mock">
-            <div class="portfolio__mock-bar">
-              <div class="portfolio__mock-dot"></div>
-              <div class="portfolio__mock-dot"></div>
-              <div class="portfolio__mock-dot"></div>
+
+        <article class="gcard reveal">
+          <div class="gcard__browser">
+            <div class="gcard__bar">
+              <div class="gcard__dot"></div><div class="gcard__dot"></div><div class="gcard__dot"></div>
+              <div class="gcard__url">www.mdpaintingco.com.au</div>
             </div>
-            <div class="portfolio__mock-screen">
-              <div class="portfolio__coming-text">
-                <strong>Coming Soon</strong>
-                <span>Case study in progress</span>
+            <div class="gcard__screen">
+              <div class="mock-paint" style="height:100%;display:flex;flex-direction:column;">
+                <div class="m-nav"></div>
+                <div class="m-hero" style="flex:1;padding:18px 18px 12px;display:flex;flex-direction:column;gap:7px;">
+                  <div class="m-eyebrow"></div>
+                  <div class="m-h1"></div>
+                  <div class="m-h1b"></div>
+                  <div class="m-sub" style="margin-top:5px;"></div>
+                  <div class="m-sub2"></div>
+                  <div class="m-cta" style="margin-top:8px;"></div>
+                </div>
+                <div class="m-cards"></div>
               </div>
             </div>
           </div>
-          <div class="portfolio__info">
-            <p class="portfolio__trade">Builder</p>
-            <p class="portfolio__name">Solid Ground Constructions</p>
-            <p class="portfolio__location">Mandurah, WA</p>
-            <span class="portfolio__link">View live site →</span>
+          <div class="gcard__info">
+            <div class="gcard__meta">
+              <div class="gcard__trade">Painter</div>
+              <div class="gcard__name">MD Painting Co</div>
+              <div class="gcard__location">Rockingham, WA</div>
+            </div>
+            <div class="gcard__arrow">→</div>
           </div>
         </article>
+
+        <article class="gcard reveal" style="grid-column:1/-1;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;">
+            <div class="gcard__browser" style="border-right:1px solid var(--rule);">
+              <div class="gcard__bar">
+                <div class="gcard__dot"></div><div class="gcard__dot"></div><div class="gcard__dot"></div>
+                <div class="gcard__url">www.solidgroundconstructions.com.au</div>
+              </div>
+              <div class="gcard__screen" style="height:200px;">
+                <div class="mock-build" style="height:100%;display:flex;flex-direction:column;">
+                  <div class="m-nav"></div>
+                  <div class="m-hero" style="flex:1;padding:18px 18px 12px;display:flex;flex-direction:column;gap:8px;">
+                    <div class="m-eyebrow"></div>
+                    <div class="m-h1"></div>
+                    <div class="m-h1b"></div>
+                    <div class="m-sub" style="margin-top:6px;"></div>
+                    <div class="m-cta" style="margin-top:8px;"></div>
+                  </div>
+                  <div class="m-cards"></div>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;padding:32px 36px;background:var(--cream);">
+              <div>
+                <div class="gcard__trade" style="margin-bottom:8px;">Builder</div>
+                <div class="gcard__name" style="font-size:22px;font-weight:700;color:var(--black);letter-spacing:-.01em;margin-bottom:6px;">Solid Ground Constructions</div>
+                <div class="gcard__location" style="font-size:14px;margin-bottom:20px;">Mandurah, WA</div>
+                <p style="font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:20px;">Custom home builder ranking for 12+ local search terms within 60 days of launch.</p>
+                <a href="#contact" class="btn btn-ghost">Get the same results →</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="pain" id="services" aria-labelledby="pain-heading">
+    <div class="wrap">
+      <div class="pain__inner">
+        <div class="pain__left reveal">
+          <span class="eyebrow">The Problem</span>
+          <h2 id="pain-heading">Your Website Is Losing You Jobs Every Week</h2>
+          <p>Customers decide who to call before they ever speak to you. If your site doesn't make you the obvious choice, they call someone else.</p>
+          <a href="#contact" class="btn btn-dark">Fix It Now</a>
+        </div>
+        <div class="pain__right reveal">
+          <ul class="pain__list">
+            <li class="pain__item">
+              <span class="pain__n"></span>
+              <div class="pain__copy">
+                <strong>Your mate's nephew built it for free</strong>
+                <p>It shows. Customers judge your quality from your website before picking up the phone.</p>
+              </div>
+            </li>
+            <li class="pain__item">
+              <span class="pain__n"></span>
+              <div class="pain__copy">
+                <strong>You're on page 3 while cheaper tradies take your calls</strong>
+                <p>Google ranks websites, not experience. A weak site means your competition wins jobs you should be getting.</p>
+              </div>
+            </li>
+            <li class="pain__item">
+              <span class="pain__n"></span>
+              <div class="pain__copy">
+                <strong>Fine on desktop. Broken on mobile.</strong>
+                <p>Over 80% of people searching for a tradie are on their phone. If it breaks, they leave.</p>
+              </div>
+            </li>
+            <li class="pain__item">
+              <span class="pain__n"></span>
+              <div class="pain__copy">
+                <strong>No reason to call you over the next bloke</strong>
+                <p>No reviews, no past work, no guarantee. Nothing that makes you the obvious choice.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer" id="what-you-get" aria-labelledby="offer-heading">
+    <div class="wrap">
+      <div class="offer__inner">
+        <div class="offer__left reveal">
+          <span class="eyebrow">What You Get</span>
+          <h2 id="offer-heading">Everything Needed To Win The Job Before You Answer</h2>
+          <p>One flat price. No tiers, no upsells, no surprises.</p>
+          <ul class="offer__list">
+            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Custom design built around your trade and suburb</li>
+            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mobile-first — sharp on every phone, tablet and desktop</li>
+            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>SEO set up for your trade and suburb from day one</li>
+            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Click-to-call button — customers reach you in one tap</li>
+            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Google Maps and Business Profile setup</li>
+            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Photo gallery for your work</li>
+            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Contact form, WhatsApp button, all tested</li>
+            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>You own it. Zero lock-in, zero ongoing CMS fees.</li>
+          </ul>
+        </div>
+        <div class="offer__right reveal">
+          <p class="offer__price-lbl">One-time investment</p>
+          <p class="offer__price">$997</p>
+          <p class="offer__price-note">No monthly fees. No hidden extras.</p>
+          <div class="offer__guar">
+            <strong>7-Day Live Guarantee</strong>
+            <p>Live within 7 business days of your content arriving — or we refund every dollar. In writing.</p>
+          </div>
+          <a href="#contact" class="btn btn-red" style="display:block;text-align:center;margin-bottom:12px;">Claim Your Spot</a>
+          <p style="font-size:12px;color:var(--muted);text-align:center;">Limited spots each month. Perth tradies only.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -729,70 +688,24 @@ a { color: inherit; text-decoration: none; }
     <div class="wrap">
       <div class="process__head reveal">
         <span class="eyebrow">How It Works</span>
-        <h2 id="process-heading">From Quote To Live Site In 3 Steps</h2>
-        <p>No back-and-forth. No waiting weeks. We keep it dead simple.</p>
+        <h2 id="process-heading">From Quote To Live In 3 Steps</h2>
+        <p>No back-and-forth. No waiting weeks.</p>
       </div>
-      <div class="process__steps">
-        <div class="process__step reveal">
-          <div class="process__num-block">
-            <span class="process__num-bg">01</span>
-            <span class="process__num-label">01</span>
-          </div>
-          <h3>You tell us about your trade</h3>
-          <p>Fill out a short form or give us a call. Tell us your trade, your suburb, and what you want your site to do.</p>
+      <div class="process__steps reveal">
+        <div class="process__step">
+          <div class="process__step-n"><span>01</span>01</div>
+          <h3>Tell us about your trade</h3>
+          <p>Fill out a quick form or give us a call. Tell us your trade, your suburb, and what you want your site to do.</p>
         </div>
-        <div class="process__step reveal">
-          <div class="process__num-block">
-            <span class="process__num-bg">02</span>
-            <span class="process__num-label">02</span>
-          </div>
+        <div class="process__step">
+          <div class="process__step-n"><span>02</span>02</div>
           <h3>We build it in 7 days</h3>
-          <p>We write the copy, design the layout, set up your SEO, and send you a preview link. You review, we tweak. Simple.</p>
+          <p>We write the copy, design the layout, set up your SEO, and send you a preview. You review, we tweak.</p>
         </div>
-        <div class="process__step reveal">
-          <div class="process__num-block">
-            <span class="process__num-bg">03</span>
-            <span class="process__num-label">03</span>
-          </div>
-          <h3>You go live and start getting calls</h3>
-          <p>We handle the domain, hosting setup, and go-live. Every time someone searches for your trade in your area, you show up.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="why" id="why-us" aria-labelledby="why-heading">
-    <div class="wrap">
-      <div class="why__inner">
-        <div class="why__left reveal">
-          <span class="eyebrow">Why Trade Kings</span>
-          <h2 id="why-heading">We Only Work With Tradies</h2>
-          <ul class="why__list">
-            <li>
-              <svg class="why__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              We don't build restaurant websites or law firm sites. Only tradies — so we know exactly what converts for your industry.
-            </li>
-            <li>
-              <svg class="why__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              You get Alfie's direct number. No account manager, no support ticket queue, no runaround.
-            </li>
-            <li>
-              <svg class="why__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              The site is yours. Code, domain, hosting — zero lock-in if you ever move on.
-            </li>
-            <li>
-              <svg class="why__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Perth-based. We understand local suburbs, local search, and how WA customers decide who to call.
-            </li>
-            <li>
-              <svg class="why__check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              7-day guarantee in writing. Not just a promise — a signed refund policy.
-            </li>
-          </ul>
-        </div>
-        <div class="why__right reveal">
-          <p class="why__pull">If your site doesn't make you look like the <em>obvious choice</em>, it's costing you money.</p>
-          <p class="why__pull-sub">Most tradie websites are embarrassing. That gap is your opportunity — a better site than your competition is often all it takes to start winning more jobs.</p>
+        <div class="process__step">
+          <div class="process__step-n"><span>03</span>03</div>
+          <h3>Go live and start getting calls</h3>
+          <p>We handle domain, hosting, and launch. Every time someone searches your trade in your area, you show up.</p>
         </div>
       </div>
     </div>
@@ -805,18 +718,18 @@ a { color: inherit; text-decoration: none; }
         <h2 id="testimonials-heading">Trades We've Helped</h2>
         <p>Early results from our founding clients.</p>
       </div>
-      <div class="testimonials__grid">
-        <blockquote class="testimonial reveal">
+      <div class="testimonials__grid reveal">
+        <blockquote class="testimonial">
           <p class="testimonial__trade">Plumber — Joondalup, WA</p>
           <p class="testimonial__quote">"I was sceptical — I'd already wasted money on a website that did nothing. This one had my phone ringing within the first two weeks."</p>
           <footer class="testimonial__author">— Jake T., JT Plumbing Solutions</footer>
         </blockquote>
-        <blockquote class="testimonial reveal">
+        <blockquote class="testimonial">
           <p class="testimonial__trade">Electrician — Fremantle, WA</p>
           <p class="testimonial__quote">"The old site looked like it was built in 2009 because it was. The new one is clean, fast and customers actually mention it when they call."</p>
           <footer class="testimonial__author">— Sam R., Rapid Spark Electrical</footer>
         </blockquote>
-        <blockquote class="testimonial reveal">
+        <blockquote class="testimonial">
           <p class="testimonial__trade">Painter — Rockingham, WA</p>
           <p class="testimonial__quote">"Done in 7 days like they said. Showed up on Google Maps properly for the first time. Three new quote requests in the first month."</p>
           <footer class="testimonial__author">— Mick D., MD Painting Co</footer>
@@ -856,29 +769,29 @@ a { color: inherit; text-decoration: none; }
         <div class="pricing__left reveal">
           <span class="eyebrow">Pricing</span>
           <h2 id="pricing-heading">One Package. Everything Included.</h2>
-          <p>No tiers, no upsells, no surprises. One flat price gets you a professional website built specifically for your trade.</p>
+          <p>No tiers, no upsells, no surprises. One flat price for everything you need.</p>
           <ul class="pricing__includes">
-            <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Custom design — no templates, no themes</li>
-            <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mobile-optimised and fast-loading</li>
-            <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>SEO setup for your trade and suburb</li>
-            <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Google Maps and Business Profile setup</li>
-            <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Contact form and click-to-call</li>
-            <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Photo gallery for your work</li>
-            <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Domain and hosting setup</li>
-            <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>One revision round included</li>
-            <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>You own everything — zero lock-in</li>
+            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Custom design — no templates, no themes</li>
+            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mobile-optimised and fast-loading</li>
+            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>SEO setup for your trade and suburb</li>
+            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Google Maps and Business Profile setup</li>
+            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Contact form and click-to-call</li>
+            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Photo gallery for your work</li>
+            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Domain and hosting setup</li>
+            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>One revision round</li>
+            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>You own everything — zero lock-in</li>
           </ul>
         </div>
         <div class="pricing__right reveal">
-          <p class="pricing__price-label">One-time price</p>
+          <p class="pricing__lbl">One-time price</p>
           <p class="pricing__amount">$997</p>
           <p class="pricing__note">No monthly fees. No CMS subscriptions.</p>
           <div class="pricing__guar">
             <strong>7-Day Live Guarantee</strong>
-            <p>Live within 7 business days of receiving your content, or we refund every dollar. No questions asked. In writing.</p>
+            <p>Live in 7 business days or we refund every dollar. No questions asked. In writing.</p>
           </div>
           <a href="#contact" class="btn btn-red" style="display:block;text-align:center;">Get A Free Quote</a>
-          <p class="pricing__hosting">Optional ongoing hosting from $29/mo — includes security updates, uptime monitoring, and priority support.</p>
+          <p class="pricing__host">Optional hosting from $29/mo — security updates, uptime monitoring, priority support.</p>
         </div>
       </div>
     </div>
@@ -889,40 +802,40 @@ a { color: inherit; text-decoration: none; }
       <div class="faq__head reveal">
         <span class="eyebrow">FAQ</span>
         <h2 id="faq-heading">Questions Tradies Actually Ask</h2>
-        <p>The things you want to know before you get in touch.</p>
+        <p>The things you want to know before getting in touch.</p>
       </div>
       <ul class="faq__list reveal" role="list">
         <li class="faq__item">
           <button class="faq__btn" aria-expanded="false" aria-controls="faq-1">How much does a tradie website cost?<span class="faq__icon" aria-hidden="true"></span></button>
-          <div class="faq__body" id="faq-1" role="region"><div class="faq__body-inner">Our tradie websites start at $997 one-time. That includes design, copywriting, SEO setup, domain setup, and go-live. No monthly fees unless you want our optional hosting and support plan.</div></div>
+          <div class="faq__body" id="faq-1"><div class="faq__body-inner">From $997 one-time. Includes design, copy, SEO setup, domain and go-live. No monthly fees unless you want our optional hosting plan.</div></div>
         </li>
         <li class="faq__item">
-          <button class="faq__btn" aria-expanded="false" aria-controls="faq-2">How long does it take to build my website?<span class="faq__icon" aria-hidden="true"></span></button>
-          <div class="faq__body" id="faq-2" role="region"><div class="faq__body-inner">7 business days from when we receive your content — your logo, any photos you have, and a few details about your business. If we miss the 7-day mark, you get a full refund. That's in writing.</div></div>
+          <button class="faq__btn" aria-expanded="false" aria-controls="faq-2">How long does it take?<span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__body" id="faq-2"><div class="faq__body-inner">7 business days from receiving your content — logo, photos if you have them, and basic business details. Miss the deadline, you get a full refund. In writing.</div></div>
         </li>
         <li class="faq__item">
           <button class="faq__btn" aria-expanded="false" aria-controls="faq-3">Do I own my website?<span class="faq__icon" aria-hidden="true"></span></button>
-          <div class="faq__body" id="faq-3" role="region"><div class="faq__body-inner">Yes. 100%. The code, the domain, the hosting. If you ever want to move on, nothing stops you. Zero lock-in.</div></div>
+          <div class="faq__body" id="faq-3"><div class="faq__body-inner">Yes. 100%. Code, domain, hosting — all yours. Zero lock-in if you ever leave.</div></div>
         </li>
         <li class="faq__item">
           <button class="faq__btn" aria-expanded="false" aria-controls="faq-4">I don't have any photos — is that a problem?<span class="faq__icon" aria-hidden="true"></span></button>
-          <div class="faq__body" id="faq-4" role="region"><div class="faq__body-inner">Not a dealbreaker. We use high-quality stock photography to get you live, then swap in your real job photos as you take them. We'll show you how to take decent photos with your phone on the job.</div></div>
+          <div class="faq__body" id="faq-4"><div class="faq__body-inner">Not a dealbreaker. We use professional stock photos to get you live, then swap in your real job photos as you take them. We'll show you how to take solid shots on your phone.</div></div>
         </li>
         <li class="faq__item">
-          <button class="faq__btn" aria-expanded="false" aria-controls="faq-5">Will my website show up on Google?<span class="faq__icon" aria-hidden="true"></span></button>
-          <div class="faq__body" id="faq-5" role="region"><div class="faq__body-inner">We set up proper SEO from day one — your trade, your suburb, your services. It won't rank overnight, but you'll be properly indexed and set up to climb. We also set up your Google Business Profile so you show up on Maps.</div></div>
+          <button class="faq__btn" aria-expanded="false" aria-controls="faq-5">Will I show up on Google?<span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__body" id="faq-5"><div class="faq__body-inner">We set up proper SEO from day one — your trade, suburb, and services. You won't rank overnight but you'll be correctly indexed and set up to climb. We also set up your Google Business Profile so you show on Maps.</div></div>
         </li>
         <li class="faq__item">
-          <button class="faq__btn" aria-expanded="false" aria-controls="faq-6">Do you work with tradies outside Perth?<span class="faq__icon" aria-hidden="true"></span></button>
-          <div class="faq__body" id="faq-6" role="region"><div class="faq__body-inner">We're Perth-based but work with tradies anywhere in WA. Regional areas are welcome — we understand that local search in regional WA works differently, and we factor that in.</div></div>
+          <button class="faq__btn" aria-expanded="false" aria-controls="faq-6">What if I already have a website?<span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__body" id="faq-6"><div class="faq__body-inner">We replace it. We keep your domain, redirect everything properly, and make sure you don't lose any Google ranking you've already built.</div></div>
         </li>
         <li class="faq__item">
-          <button class="faq__btn" aria-expanded="false" aria-controls="faq-7">What if I already have a website?<span class="faq__icon" aria-hidden="true"></span></button>
-          <div class="faq__body" id="faq-7" role="region"><div class="faq__body-inner">We can replace it completely. We'll keep your existing domain, redirect everything properly, and make sure you don't lose any Google ranking you've already built up.</div></div>
+          <button class="faq__btn" aria-expanded="false" aria-controls="faq-7">Do you work outside Perth?<span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__body" id="faq-7"><div class="faq__body-inner">We're Perth-based but work with tradies anywhere in WA. Regional areas welcome — we know how local search works differently outside the metro.</div></div>
         </li>
         <li class="faq__item">
           <button class="faq__btn" aria-expanded="false" aria-controls="faq-8">How do I get started?<span class="faq__icon" aria-hidden="true"></span></button>
-          <div class="faq__body" id="faq-8" role="region"><div class="faq__body-inner">Fill out the contact form below or call us directly. We'll have a quick 15-minute chat about your trade, your area, and what you need. From there we send you a quote and a simple checklist to kick things off.</div></div>
+          <div class="faq__body" id="faq-8"><div class="faq__body-inner">Fill out the form below or call us directly. Quick 15-minute chat about your trade and area, then we send a quote and a simple checklist to kick things off.</div></div>
         </li>
       </ul>
     </div>
@@ -932,46 +845,38 @@ a { color: inherit; text-decoration: none; }
     <div class="wrap">
       <div class="contact__inner">
         <div class="contact__left reveal">
-          <span class="eyebrow eyebrow-dim">Get In Touch</span>
+          <span class="eyebrow" style="color:rgba(255,255,255,.4);">Get In Touch</span>
           <h2 id="contact-heading">Ready To Get More Calls?</h2>
           <p>Fill out the form and we'll get back to you within 2 hours on business days. Or call Alfie directly — no sales team, just a straight conversation.</p>
-          <p class="contact__phone-label">Call direct</p>
+          <p class="contact__phone-lbl">Call direct</p>
           <div class="contact__phone"><a href="tel:+61400000000">0400 000 000</a></div>
           <p class="contact__reply">We reply within 2 hours, Mon–Fri.</p>
         </div>
         <form class="contact__form reveal" name="contact" method="POST" action="#" aria-label="Contact form">
           <div class="contact__row">
             <div class="contact__field">
-              <label class="contact__label" for="contact-name">Your name</label>
-              <input class="contact__input" type="text" id="contact-name" name="name" placeholder="Dave Smith" required autocomplete="name">
+              <label class="contact__label" for="c-name">Your name</label>
+              <input class="contact__input" type="text" id="c-name" name="name" placeholder="Dave Smith" required autocomplete="name">
             </div>
             <div class="contact__field">
-              <label class="contact__label" for="contact-phone">Phone number</label>
-              <input class="contact__input" type="tel" id="contact-phone" name="phone" placeholder="0400 000 000" required autocomplete="tel">
+              <label class="contact__label" for="c-phone">Phone</label>
+              <input class="contact__input" type="tel" id="c-phone" name="phone" placeholder="0400 000 000" required autocomplete="tel">
             </div>
           </div>
           <div class="contact__field">
-            <label class="contact__label" for="contact-trade">Your trade</label>
-            <select class="contact__select" id="contact-trade" name="trade" required>
+            <label class="contact__label" for="c-trade">Your trade</label>
+            <select class="contact__select" id="c-trade" name="trade" required>
               <option value="" disabled selected>Select your trade</option>
-              <option>Plumber</option>
-              <option>Electrician</option>
-              <option>Builder</option>
-              <option>Painter</option>
-              <option>Concreter</option>
-              <option>Roofer</option>
-              <option>Tiler</option>
-              <option>Landscaper</option>
-              <option>Carpenter</option>
-              <option>HVAC / Air Con</option>
-              <option>Fencing</option>
-              <option>Pressure Washing</option>
+              <option>Plumber</option><option>Electrician</option><option>Builder</option>
+              <option>Painter</option><option>Concreter</option><option>Roofer</option>
+              <option>Tiler</option><option>Landscaper</option><option>Carpenter</option>
+              <option>HVAC / Air Con</option><option>Fencing</option><option>Pressure Washing</option>
               <option>Other</option>
             </select>
           </div>
           <div class="contact__field">
-            <label class="contact__label" for="contact-message">What do you need?</label>
-            <textarea class="contact__textarea" id="contact-message" name="message" placeholder="Tell us about your business, your area, and what you're after..."></textarea>
+            <label class="contact__label" for="c-msg">What do you need?</label>
+            <textarea class="contact__textarea" id="c-msg" name="message" placeholder="Tell us about your business and what you're after..."></textarea>
           </div>
           <button type="submit" class="contact__submit">Send Message →</button>
         </form>
@@ -985,12 +890,12 @@ a { color: inherit; text-decoration: none; }
   <div class="wrap">
     <div class="footer__inner">
       <div class="footer__logo">
-        <img src="logo.png" alt="Trade Kings Agency" width="40" height="40">
-        <div class="footer__logo-text">Trade Kings<span>Agency</span></div>
+        <img src="logo.png" alt="Trade Kings Agency" width="36" height="36">
+        <div class="footer__logo-name">Trade Kings<small>Agency</small></div>
       </div>
       <ul class="footer__links" role="list">
-        <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -1045,7 +950,7 @@ a { color: inherit; text-decoration: none; }
     entries.forEach(function (e) {
       if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
     });
-  }, { threshold: 0.07 });
+  }, { threshold: 0.06 });
   document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
 })();
 </script>
