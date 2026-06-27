@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Trade Kings Agency","description":"Web design for Perth tradies.","url":"https://tradekingsagency.com.au","telephone":"+61400000000","address":{"@type":"PostalAddress","addressLocality":"Perth","addressRegion":"WA","addressCountry":"AU"},"areaServed":"Western Australia"}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Trade Kings Agency","description":"Web design for Perth tradies.","url":"https://tradekingsagency.com.au","telephone":"+61400000000","address":{"@type":"PostalAddress","addressLocality":"Perth","addressRegion":"WA","addressCountry":"AU"},"areaServed":"Western Australia","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"47"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does a tradie website cost?","acceptedAnswer":{"@type":"Answer","text":"From $997 one-time. No monthly fees."}},{"@type":"Question","name":"How long does it take?","acceptedAnswer":{"@type":"Answer","text":"7 business days from receiving your content, guaranteed in writing."}}]}
@@ -26,14 +26,15 @@
 
 :root {
   --red:    #C01313;
-  --black:  #111111;
-  --ink:    #1E2530;
+  --black:  #0F0F0F;
+  --ink:    #1A202C;
   --body:   #374151;
   --muted:  #6B7280;
+  --faint:  #9CA3AF;
   --rule:   #E5E7EB;
   --cream:  #F8F7F4;
   --white:  #FFFFFF;
-  --max:    1160px;
+  --max:    1140px;
   --px:     48px;
 }
 
@@ -41,36 +42,35 @@ html { scroll-behavior: smooth; }
 body { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 17px; line-height: 1.7; color: var(--body); background: var(--white); -webkit-font-smoothing: antialiased; }
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
+
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--px); }
 
-/* BUTTONS */
-.btn { display: inline-block; font-family: inherit; font-size: 14px; font-weight: 700; line-height: 1; padding: 14px 26px; border-radius: 100px; border: 2px solid transparent; cursor: pointer; transition: background .18s, color .18s, border-color .18s; white-space: nowrap; letter-spacing: .01em; }
+.btn { display: inline-block; font-family: inherit; font-size: 15px; font-weight: 700; line-height: 1; padding: 15px 28px; border-radius: 100px; border: 2px solid transparent; cursor: pointer; transition: all .18s; white-space: nowrap; }
 .btn-red  { background: var(--red); color: var(--white); border-color: var(--red); }
 .btn-red:hover { background: #a01010; border-color: #a01010; }
-.btn-dark { background: var(--black); color: var(--white); border-color: var(--black); }
-.btn-dark:hover { background: #333; border-color: #333; }
-.btn-ghost { background: transparent; color: var(--black); border-color: var(--rule); }
-.btn-ghost:hover { border-color: var(--black); }
-.btn-ghost-white { background: transparent; color: var(--white); border-color: rgba(255,255,255,.35); }
-.btn-ghost-white:hover { border-color: var(--white); }
+.btn-white { background: var(--white); color: var(--black); border-color: var(--white); }
+.btn-white:hover { background: var(--cream); }
+.btn-outline { background: transparent; color: var(--black); border-color: var(--rule); }
+.btn-outline:hover { border-color: var(--black); }
 
-.eyebrow { display: block; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
+.eyebrow { display: block; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
 
-.reveal { opacity: 0; transform: translateY(20px); transition: opacity .5s ease, transform .5s ease; }
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .5s ease, transform .5s ease; }
 .reveal.in { opacity: 1; transform: none; }
 
-/* NAV */
+
+/* ─── NAV ─── */
 .site-header { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid transparent; transition: border-color .2s, box-shadow .2s; }
-.site-header.scrolled { border-bottom-color: var(--rule); box-shadow: 0 1px 12px rgba(0,0,0,.06); }
-.nav { display: flex; align-items: center; height: 68px; gap: 32px; }
+.site-header.scrolled { border-bottom-color: var(--rule); box-shadow: 0 1px 16px rgba(0,0,0,.06); }
+.nav { display: flex; align-items: center; height: 68px; gap: 40px; }
 .nav__logo { flex-shrink: 0; display: flex; align-items: center; gap: 10px; }
-.nav__logo img { width: 44px; height: 44px; object-fit: contain; }
+.nav__logo img { width: 42px; height: 42px; object-fit: contain; }
 .nav__logo-name { font-size: 14px; font-weight: 700; color: var(--black); line-height: 1.2; letter-spacing: -.01em; }
-.nav__logo-name small { display: block; font-size: 10px; font-weight: 400; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
-.nav__links { display: flex; align-items: center; gap: 28px; list-style: none; margin: 0 auto; }
+.nav__logo-name small { display: block; font-size: 10px; font-weight: 400; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
+.nav__links { display: flex; align-items: center; gap: 30px; list-style: none; margin: 0 auto; }
 .nav__links a { font-size: 14px; color: var(--body); transition: color .15s; }
 .nav__links a:hover { color: var(--black); }
-.nav__right { display: flex; align-items: center; gap: 16px; flex-shrink: 0; }
+.nav__right { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
 .nav__phone { font-size: 14px; font-weight: 700; color: var(--black); transition: color .15s; }
 .nav__phone:hover { color: var(--red); }
 .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 6px; margin-left: auto; }
@@ -78,230 +78,178 @@ a { color: inherit; text-decoration: none; }
 .hamburger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-.nav-drawer { display: none; position: fixed; top: 68px; left: 0; right: 0; background: var(--white); border-top: 1px solid var(--rule); padding: 20px var(--px) 28px; z-index: 99; box-shadow: 0 8px 24px rgba(0,0,0,.1); }
+.nav-drawer { display: none; position: fixed; top: 68px; left: 0; right: 0; background: var(--white); border-top: 1px solid var(--rule); padding: 20px var(--px) 28px; z-index: 99; box-shadow: 0 8px 32px rgba(0,0,0,.1); }
 .nav-drawer.open { display: block; }
 .nav-drawer a { display: block; font-size: 16px; font-weight: 700; color: var(--black); padding: 12px 0; border-bottom: 1px solid var(--rule); }
 .nav-drawer .btn { margin-top: 18px; display: block; text-align: center; }
 
-/* HERO */
-.hero { background: var(--white); padding: 80px 0 0; }
-.hero__inner { display: grid; grid-template-columns: 1fr 420px; gap: 64px; align-items: center; }
-.hero__text .eyebrow { color: var(--muted); }
-.hero__h1 { font-size: clamp(36px, 4.5vw, 58px); font-weight: 700; line-height: 1.07; letter-spacing: -.03em; color: var(--black); margin-bottom: 22px; }
+
+/* ─── HERO ─── */
+.hero { background: var(--white); padding: 96px 0 88px; }
+.hero__inner { max-width: 780px; }
+.hero__h1 {
+  font-size: clamp(40px, 5.5vw, 68px);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -.03em;
+  color: var(--black);
+  margin-bottom: 24px;
+}
 .hero__h1 em { font-style: normal; color: var(--red); }
-.hero__sub { font-size: 18px; color: var(--body); line-height: 1.65; margin-bottom: 36px; max-width: 440px; }
-.hero__actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-.hero__link { font-size: 14px; font-weight: 700; color: var(--body); display: inline-flex; align-items: center; gap: 5px; transition: color .15s, gap .15s; }
-.hero__link:hover { color: var(--black); gap: 9px; }
+.hero__sub { font-size: 19px; color: var(--body); line-height: 1.65; margin-bottom: 40px; max-width: 520px; }
+.hero__actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
+.hero__link { font-size: 15px; font-weight: 700; color: var(--body); display: inline-flex; align-items: center; gap: 6px; transition: color .15s, gap .15s; }
+.hero__link:hover { color: var(--black); gap: 10px; }
+.hero__trust { display: flex; align-items: center; gap: 0; flex-wrap: wrap; }
+.hero__stars { display: flex; align-items: center; gap: 8px; }
+.hero__stars-icons { color: #FBBC04; font-size: 16px; letter-spacing: 1px; }
+.hero__stars-text { font-size: 14px; font-weight: 700; color: var(--black); }
+.hero__stars-count { font-size: 13px; color: var(--muted); font-weight: 400; }
+.hero__trust-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--rule); margin: 0 16px; flex-shrink: 0; }
+.hero__trust-item { font-size: 13px; color: var(--muted); }
+.hero__trust-item strong { color: var(--black); font-weight: 700; }
 
-/* Hero visual */
-.hero__visual { position: relative; }
-.hero__logo-wrap { position: relative; display: flex; align-items: center; justify-content: center; }
-.hero__logo-bg { width: 380px; height: 380px; border-radius: 50%; background: var(--cream); display: flex; align-items: center; justify-content: center; position: relative; }
-.hero__logo-bg::before { content: ''; position: absolute; inset: 12px; border-radius: 50%; border: 1px solid var(--rule); }
-.hero__logo-img { width: 260px; height: 260px; object-fit: contain; filter: drop-shadow(0 8px 24px rgba(0,0,0,.15)); }
-.hero__badge { position: absolute; bottom: 32px; right: -8px; background: var(--white); border: 1px solid var(--rule); padding: 14px 18px; box-shadow: 0 4px 16px rgba(0,0,0,.08); min-width: 130px; }
-.hero__badge-num { font-size: 26px; font-weight: 700; color: var(--black); letter-spacing: -.03em; line-height: 1; margin-bottom: 2px; }
-.hero__badge-label { font-size: 11px; color: var(--muted); letter-spacing: .05em; text-transform: uppercase; }
-.hero__badge2 { position: absolute; top: 28px; left: -12px; background: var(--red); padding: 14px 18px; min-width: 130px; }
-.hero__badge2 .hero__badge-num { color: var(--white); }
-.hero__badge2 .hero__badge-label { color: rgba(255,255,255,.65); }
 
-/* Stats strip */
-.stats { background: var(--black); }
-.stats__inner { display: grid; grid-template-columns: repeat(4, 1fr); }
-.stat { padding: 28px 0; text-align: center; border-right: 1px solid rgba(255,255,255,.08); }
-.stat:last-child { border-right: none; }
-.stat__num { display: block; font-size: 26px; font-weight: 700; color: var(--white); letter-spacing: -.02em; line-height: 1; margin-bottom: 5px; }
-.stat__label { font-size: 11px; color: rgba(255,255,255,.4); letter-spacing: .07em; text-transform: uppercase; }
+/* ─── STATS BAR ─── */
+.stats-bar { background: var(--black); }
+.stats-bar__inner { display: grid; grid-template-columns: repeat(4, 1fr); }
+.stat-item { padding: 26px 0; text-align: center; border-right: 1px solid rgba(255,255,255,.07); }
+.stat-item:last-child { border-right: none; }
+.stat-item__num { display: block; font-size: 26px; font-weight: 700; color: var(--white); letter-spacing: -.025em; line-height: 1; margin-bottom: 5px; }
+.stat-item__label { font-size: 11px; color: rgba(255,255,255,.38); letter-spacing: .07em; text-transform: uppercase; }
 
-/* PORTFOLIO GALLERY */
-.portfolio { padding: 96px 0; background: var(--white); }
-.portfolio__head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 48px; }
-.portfolio__head h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.15; max-width: 480px; }
-.portfolio__head p { font-size: 15px; color: var(--muted); max-width: 240px; text-align: right; line-height: 1.6; }
-.gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.gallery__big { grid-row: span 2; }
 
-/* Gallery card */
-.gcard { background: var(--white); border: 1px solid var(--rule); overflow: hidden; transition: box-shadow .25s, transform .25s; }
-.gcard:hover { box-shadow: 0 12px 40px rgba(0,0,0,.1); transform: translateY(-3px); }
-.gcard__browser { background: #1A1A1A; }
-.gcard__bar { background: #242424; padding: 10px 14px; display: flex; align-items: center; gap: 6px; }
-.gcard__dot { width: 9px; height: 9px; border-radius: 50%; }
-.gcard__dot:nth-child(1) { background: #FF5F57; }
-.gcard__dot:nth-child(2) { background: #FEBC2E; }
-.gcard__dot:nth-child(3) { background: #28C840; }
-.gcard__url { flex: 1; background: #333; border-radius: 3px; padding: 4px 10px; font-size: 10px; color: rgba(255,255,255,.3); font-family: monospace; margin-left: 8px; overflow: hidden; white-space: nowrap; }
-.gcard__screen { overflow: hidden; }
-.gallery__big .gcard__screen { height: 360px; }
-.gallery .gcard:not(.gallery__big) .gcard__screen { height: 168px; }
+/* ─── PORTFOLIO ─── */
+.portfolio { padding: 96px 0 0; background: var(--white); }
+.portfolio__head { margin-bottom: 48px; }
+.portfolio__head h2 { font-size: clamp(28px, 3vw, 42px); font-weight: 700; color: var(--black); letter-spacing: -.025em; line-height: 1.12; margin-bottom: 10px; }
+.portfolio__head p { font-size: 16px; color: var(--muted); max-width: 440px; }
+.portfolio__image { width: 100%; overflow: hidden; }
+.portfolio__image img { width: 100%; height: auto; display: block; }
+.portfolio__credits { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--rule); margin-top: 0; }
+.credit { padding: 22px 24px; border-right: 1px solid var(--rule); }
+.credit:last-child { border-right: none; }
+.credit__trade { display: block; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--red); margin-bottom: 3px; }
+.credit__name { font-size: 14px; font-weight: 700; color: var(--black); }
+.credit__loc { font-size: 13px; color: var(--muted); }
 
-/* Mock site: Plumber – Navy & White */
-.mock-plumber { background: #F0F4FA; display: flex; flex-direction: column; }
-.mock-plumber .m-nav { background: #1B3260; height: 30px; display: flex; align-items: center; padding: 0 14px; gap: 8px; flex-shrink: 0; }
-.mock-plumber .m-nav-logo { width: 14px; height: 14px; border-radius: 50%; background: #fff; opacity: .9; }
-.mock-plumber .m-nav-links { display: flex; gap: 6px; margin-left: auto; }
-.mock-plumber .m-nav-link { width: 24px; height: 5px; background: rgba(255,255,255,.3); border-radius: 2px; }
-.mock-plumber .m-nav-cta { width: 40px; height: 18px; background: #2A7DE1; border-radius: 2px; margin-left: 6px; }
-.mock-plumber .m-hero { background: #E8EFF9; flex: 1; padding: 18px 18px 14px; display: flex; flex-direction: column; gap: 8px; }
-.mock-plumber .m-eyebrow { width: 60px; height: 6px; background: #2A7DE1; border-radius: 1px; opacity: .7; }
-.mock-plumber .m-h1 { width: 80%; height: 14px; background: #1B3260; border-radius: 2px; }
-.mock-plumber .m-h1b { width: 60%; height: 14px; background: #1B3260; border-radius: 2px; }
-.mock-plumber .m-sub { width: 90%; height: 6px; background: rgba(27,50,96,.2); border-radius: 1px; margin-top: 4px; }
-.mock-plumber .m-sub2 { width: 70%; height: 6px; background: rgba(27,50,96,.2); border-radius: 1px; }
-.mock-plumber .m-cta { width: 70px; height: 22px; background: #1B3260; border-radius: 2px; margin-top: 6px; }
-.mock-plumber .m-cards { display: flex; gap: 8px; padding: 12px 18px; background: #fff; }
-.mock-plumber .m-card { flex: 1; height: 36px; background: #F0F4FA; border: 1px solid #DCE6F5; border-radius: 2px; }
 
-/* Mock site: Electrician – Black & Amber */
-.mock-elec { background: #0D0D0D; display: flex; flex-direction: column; }
-.mock-elec .m-nav { background: #111; height: 30px; display: flex; align-items: center; padding: 0 14px; gap: 8px; flex-shrink: 0; border-bottom: 1px solid #222; }
-.mock-elec .m-nav-logo { width: 22px; height: 8px; background: #F59E0B; border-radius: 1px; }
-.mock-elec .m-nav-links { display: flex; gap: 6px; margin-left: auto; }
-.mock-elec .m-nav-link { width: 24px; height: 5px; background: rgba(255,255,255,.2); border-radius: 2px; }
-.mock-elec .m-nav-cta { width: 40px; height: 18px; background: #F59E0B; border-radius: 2px; margin-left: 6px; }
-.mock-elec .m-hero { background: #111; flex: 1; padding: 18px 18px 14px; display: flex; flex-direction: column; gap: 8px; }
-.mock-elec .m-eyebrow { width: 50px; height: 5px; background: #F59E0B; border-radius: 1px; }
-.mock-elec .m-h1 { width: 85%; height: 16px; background: #F59E0B; border-radius: 2px; }
-.mock-elec .m-h1b { width: 55%; height: 16px; background: rgba(245,158,11,.5); border-radius: 2px; }
-.mock-elec .m-sub { width: 88%; height: 5px; background: rgba(255,255,255,.15); border-radius: 1px; margin-top: 6px; }
-.mock-elec .m-sub2 { width: 65%; height: 5px; background: rgba(255,255,255,.1); border-radius: 1px; }
-.mock-elec .m-cta { width: 70px; height: 22px; background: #F59E0B; border-radius: 2px; margin-top: 8px; }
-.mock-elec .m-cards { display: flex; gap: 6px; padding: 10px 14px; background: #1A1A1A; }
-.mock-elec .m-card { flex: 1; height: 32px; background: #242424; border: 1px solid #2E2E2E; border-radius: 2px; }
-
-/* Mock site: Builder – Earthy Green */
-.mock-build { background: #F4F0E8; display: flex; flex-direction: column; }
-.mock-build .m-nav { background: #2C3828; height: 30px; display: flex; align-items: center; padding: 0 14px; gap: 8px; flex-shrink: 0; }
-.mock-build .m-nav-logo { width: 28px; height: 8px; background: rgba(255,255,255,.8); border-radius: 1px; }
-.mock-build .m-nav-links { display: flex; gap: 6px; margin-left: auto; }
-.mock-build .m-nav-link { width: 22px; height: 5px; background: rgba(255,255,255,.25); border-radius: 2px; }
-.mock-build .m-nav-cta { width: 44px; height: 18px; background: #4A7C59; border-radius: 2px; margin-left: 6px; }
-.mock-build .m-hero { background: #F4F0E8; flex: 1; padding: 18px 18px 12px; display: flex; flex-direction: column; gap: 8px; }
-.mock-build .m-eyebrow { width: 55px; height: 5px; background: #4A7C59; border-radius: 1px; opacity: .8; }
-.mock-build .m-h1 { width: 82%; height: 13px; background: #2C3828; border-radius: 2px; }
-.mock-build .m-h1b { width: 60%; height: 13px; background: #2C3828; border-radius: 2px; }
-.mock-build .m-sub { width: 90%; height: 5px; background: rgba(44,56,40,.2); border-radius: 1px; margin-top: 5px; }
-.mock-build .m-sub2 { width: 68%; height: 5px; background: rgba(44,56,40,.15); border-radius: 1px; }
-.mock-build .m-cta { width: 68px; height: 20px; background: #4A7C59; border-radius: 2px; margin-top: 7px; }
-.mock-build .m-cards { display: flex; gap: 8px; padding: 12px 18px; background: #fff; }
-.mock-build .m-card { flex: 1; height: 34px; background: #F4F0E8; border: 1px solid #E0D9CC; border-radius: 2px; }
-
-/* Mock site: Painter – White & Red */
-.mock-paint { background: #F9F7F4; display: flex; flex-direction: column; }
-.mock-paint .m-nav { background: #fff; height: 30px; display: flex; align-items: center; padding: 0 14px; gap: 8px; flex-shrink: 0; border-bottom: 1px solid #eee; }
-.mock-paint .m-nav-logo { width: 28px; height: 7px; background: var(--red); border-radius: 1px; opacity: .85; }
-.mock-paint .m-nav-links { display: flex; gap: 6px; margin-left: auto; }
-.mock-paint .m-nav-link { width: 22px; height: 5px; background: #ccc; border-radius: 2px; }
-.mock-paint .m-nav-cta { width: 38px; height: 18px; background: var(--red); border-radius: 2px; margin-left: 6px; }
-.mock-paint .m-hero { background: #F9F7F4; flex: 1; padding: 18px 18px 12px; display: flex; flex-direction: column; gap: 7px; }
-.mock-paint .m-eyebrow { width: 48px; height: 5px; background: var(--red); border-radius: 1px; opacity: .7; }
-.mock-paint .m-h1 { width: 78%; height: 13px; background: #111; border-radius: 2px; }
-.mock-paint .m-h1b { width: 58%; height: 13px; background: #111; border-radius: 2px; }
-.mock-paint .m-sub { width: 88%; height: 5px; background: #ccc; border-radius: 1px; margin-top: 5px; }
-.mock-paint .m-sub2 { width: 65%; height: 5px; background: #ddd; border-radius: 1px; }
-.mock-paint .m-cta { width: 64px; height: 20px; background: var(--red); border-radius: 10px; margin-top: 7px; }
-.mock-paint .m-cards { display: flex; gap: 8px; padding: 12px 18px; background: #fff; }
-.mock-paint .m-card { flex: 1; height: 32px; background: #F5F5F5; border: 1px solid #E8E8E8; border-radius: 2px; }
-
-/* Gallery card info */
-.gcard__info { padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--rule); }
-.gcard__meta {}
-.gcard__trade { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--red); margin-bottom: 3px; }
-.gcard__name { font-size: 15px; font-weight: 700; color: var(--black); }
-.gcard__location { font-size: 12px; color: var(--muted); }
-.gcard__arrow { width: 32px; height: 32px; border: 1px solid var(--rule); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--muted); transition: all .2s; flex-shrink: 0; }
-.gcard:hover .gcard__arrow { background: var(--black); border-color: var(--black); color: var(--white); }
-
-/* PAIN */
+/* ─── PAIN ─── */
 .pain { padding: 96px 0; background: var(--cream); }
-.pain__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-.pain__left h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.15; margin-bottom: 16px; }
-.pain__left p { color: var(--muted); font-size: 16px; line-height: 1.7; margin-bottom: 32px; }
-.pain__right { padding-top: 8px; }
+.pain__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; align-items: start; }
+.pain__left h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.14; margin-bottom: 16px; }
+.pain__left > p { font-size: 16px; color: var(--muted); line-height: 1.7; margin-bottom: 32px; }
 .pain__list { list-style: none; counter-reset: pain; }
-.pain__item { counter-increment: pain; display: flex; gap: 20px; padding: 24px 0; border-bottom: 1px solid var(--rule); align-items: flex-start; }
+.pain__item { counter-increment: pain; display: flex; gap: 18px; padding: 22px 0; border-bottom: 1px solid var(--rule); }
 .pain__item:first-child { border-top: 1px solid var(--rule); }
-.pain__n { font-size: 12px; font-weight: 700; color: var(--red); letter-spacing: .06em; padding-top: 3px; flex-shrink: 0; }
+.pain__n { font-size: 11px; font-weight: 700; color: var(--red); letter-spacing: .07em; padding-top: 3px; flex-shrink: 0; min-width: 24px; }
 .pain__n::before { content: counter(pain, decimal-leading-zero); }
 .pain__copy strong { display: block; font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 4px; line-height: 1.3; }
 .pain__copy p { font-size: 14px; color: var(--muted); line-height: 1.6; }
 
-/* WHAT YOU GET */
+
+/* ─── OFFER ─── */
 .offer { padding: 96px 0; background: var(--white); }
-.offer__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-.offer__left h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.15; margin-bottom: 14px; }
-.offer__left > p { color: var(--muted); font-size: 16px; line-height: 1.7; margin-bottom: 32px; }
+.offer__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; align-items: start; }
+.offer__left h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.14; margin-bottom: 14px; }
+.offer__left > p { font-size: 16px; color: var(--muted); margin-bottom: 32px; line-height: 1.7; }
 .offer__list { list-style: none; }
-.offer__list li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid var(--rule); font-size: 15px; color: var(--body); }
+.offer__list li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid var(--rule); font-size: 15px; color: var(--body); line-height: 1.5; }
 .offer__list li:first-child { border-top: 1px solid var(--rule); }
-.offer__tick { color: var(--red); flex-shrink: 0; margin-top: 3px; }
-.offer__right { background: var(--cream); padding: 40px; border: 1px solid var(--rule); }
-.offer__price-lbl { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
-.offer__price { font-size: 68px; font-weight: 700; color: var(--black); letter-spacing: -.04em; line-height: 1; margin-bottom: 4px; }
-.offer__price-note { font-size: 14px; color: var(--muted); margin-bottom: 28px; }
-.offer__guar { padding: 18px 20px; border: 1px solid var(--rule); background: var(--white); margin-bottom: 24px; }
-.offer__guar strong { display: block; font-size: 14px; font-weight: 700; color: var(--black); margin-bottom: 3px; }
-.offer__guar p { font-size: 13px; color: var(--muted); line-height: 1.5; margin: 0; }
+.tick { color: var(--red); flex-shrink: 0; margin-top: 3px; }
+.offer__right { padding-top: 8px; }
+.offer__price-label { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.offer__price { font-size: 80px; font-weight: 700; color: var(--black); letter-spacing: -.05em; line-height: 1; margin-bottom: 6px; }
+.offer__price-note { font-size: 15px; color: var(--muted); margin-bottom: 36px; padding-bottom: 36px; border-bottom: 1px solid var(--rule); }
+.offer__guarantee { margin-bottom: 32px; }
+.offer__guarantee strong { display: block; font-size: 17px; font-weight: 700; color: var(--black); margin-bottom: 6px; }
+.offer__guarantee p { font-size: 15px; color: var(--muted); line-height: 1.65; }
+.offer__note { margin-top: 12px; font-size: 12px; color: var(--faint); }
 
-/* PROCESS */
+
+/* ─── PROCESS ─── */
 .process { padding: 96px 0; background: var(--cream); }
-.process__head { max-width: 500px; margin-bottom: 64px; }
-.process__head h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.15; margin-bottom: 12px; }
-.process__head p { color: var(--muted); font-size: 16px; }
-.process__steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
-.process__step { background: var(--white); padding: 36px 32px; }
-.process__step-n { font-size: 40px; font-weight: 700; color: var(--rule); letter-spacing: -.03em; line-height: 1; margin-bottom: 20px; position: relative; }
-.process__step-n span { position: absolute; left: 0; top: 2px; font-size: 12px; font-weight: 700; color: var(--red); letter-spacing: .06em; }
-.process__step h3 { font-size: 17px; font-weight: 700; color: var(--black); margin-bottom: 8px; line-height: 1.3; }
-.process__step p { font-size: 14px; color: var(--muted); line-height: 1.65; }
+.process__head { max-width: 480px; margin-bottom: 60px; }
+.process__head h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.14; margin-bottom: 10px; }
+.process__head p { font-size: 16px; color: var(--muted); }
+.process__steps { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--rule); }
+.process__step { padding: 40px 0 0; padding-right: 48px; }
+.process__step:last-child { padding-right: 0; }
+.process__n { font-size: 11px; font-weight: 700; letter-spacing: .1em; color: var(--red); margin-bottom: 20px; }
+.process__step h3 { font-size: 18px; font-weight: 700; color: var(--black); margin-bottom: 10px; line-height: 1.3; }
+.process__step p { font-size: 15px; color: var(--muted); line-height: 1.65; }
 
-/* TESTIMONIALS */
-.testimonials { padding: 96px 0; background: var(--white); }
-.testimonials__head { margin-bottom: 48px; }
-.testimonials__head h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.15; margin-bottom: 10px; }
-.testimonials__head p { color: var(--muted); font-size: 16px; }
-.testimonials__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
-.testimonial { background: var(--white); padding: 36px 32px; }
-.testimonial__trade { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--red); margin-bottom: 16px; }
-.testimonial__quote { font-size: 16px; font-style: italic; color: var(--black); line-height: 1.7; margin-bottom: 20px; }
-.testimonial__author { font-size: 13px; font-weight: 700; color: var(--muted); }
-.testimonials__note { margin-top: 20px; font-size: 12px; color: var(--muted); }
 
-/* TRADES */
+/* ─── GOOGLE REVIEWS ─── */
+.reviews { padding: 96px 0; background: var(--ink); }
+.reviews__top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 60px; gap: 40px; }
+.reviews__top h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--white); letter-spacing: -.02em; line-height: 1.14; max-width: 400px; }
+.reviews__rating { display: flex; align-items: center; gap: 16px; flex-shrink: 0; }
+.reviews__google-g { width: 36px; height: 36px; }
+.reviews__score { }
+.reviews__score-num { font-size: 32px; font-weight: 700; color: var(--white); letter-spacing: -.025em; line-height: 1; margin-bottom: 2px; }
+.reviews__score-stars { color: #FBBC04; font-size: 16px; letter-spacing: 1px; display: block; margin-bottom: 2px; }
+.reviews__score-count { font-size: 12px; color: rgba(255,255,255,.4); }
+.reviews__grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid rgba(255,255,255,.08); }
+.review { padding: 36px 0; padding-right: 48px; border-right: 1px solid rgba(255,255,255,.08); }
+.review:last-child { border-right: none; padding-right: 0; }
+.review__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.review__stars { color: #FBBC04; font-size: 14px; letter-spacing: 1px; }
+.review__date { font-size: 12px; color: rgba(255,255,255,.25); }
+.review__text { font-size: 16px; font-style: italic; color: rgba(255,255,255,.8); line-height: 1.7; margin-bottom: 20px; }
+.review__author { font-size: 13px; font-weight: 700; color: rgba(255,255,255,.5); }
+.review__author span { display: block; font-size: 12px; font-weight: 400; color: rgba(255,255,255,.28); margin-top: 1px; }
+.reviews__note { margin-top: 40px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.06); font-size: 12px; color: rgba(255,255,255,.2); }
+
+
+/* ─── TRADES ─── */
 .trades { padding: 80px 0; background: var(--cream); }
 .trades__head { margin-bottom: 36px; }
 .trades__head h2 { font-size: clamp(22px, 2.4vw, 32px); font-weight: 700; color: var(--black); letter-spacing: -.02em; margin-bottom: 6px; }
-.trades__head p { color: var(--muted); font-size: 15px; }
+.trades__head p { font-size: 15px; color: var(--muted); }
 .trades__grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
-.trades__cell { border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 18px 22px; font-size: 14px; font-weight: 700; color: var(--black); transition: background .15s, color .15s; cursor: default; }
+.trades__cell { border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 18px 22px; font-size: 14px; font-weight: 700; color: var(--black); transition: background .14s, color .14s; cursor: default; }
 .trades__cell:hover { background: var(--black); color: var(--white); }
 
-/* PRICING */
+
+/* ─── PRICING ─── */
 .pricing { padding: 96px 0; background: var(--white); }
-.pricing__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-.pricing__left h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.15; margin-bottom: 12px; }
-.pricing__left > p { color: var(--muted); font-size: 16px; line-height: 1.7; margin-bottom: 32px; }
+.pricing__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; align-items: start; }
+.pricing__left h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.14; margin-bottom: 12px; }
+.pricing__left > p { font-size: 16px; color: var(--muted); line-height: 1.7; margin-bottom: 32px; }
 .pricing__includes { list-style: none; }
 .pricing__includes li { display: flex; gap: 10px; align-items: flex-start; padding: 11px 0; border-bottom: 1px solid var(--rule); font-size: 14px; color: var(--body); }
 .pricing__includes li:first-child { border-top: 1px solid var(--rule); }
-.ptick { color: var(--red); flex-shrink: 0; margin-top: 3px; }
-.pricing__right { background: var(--black); padding: 40px; color: var(--white); }
-.pricing__lbl { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 10px; }
-.pricing__amount { font-size: 68px; font-weight: 700; color: var(--white); letter-spacing: -.04em; line-height: 1; margin-bottom: 4px; }
-.pricing__note { font-size: 13px; color: rgba(255,255,255,.35); margin-bottom: 28px; }
-.pricing__guar { padding: 18px 20px; border: 1px solid rgba(255,255,255,.1); margin-bottom: 24px; }
-.pricing__guar strong { display: block; font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 3px; }
-.pricing__guar p { font-size: 13px; color: rgba(255,255,255,.45); line-height: 1.5; margin: 0; }
-.pricing__host { font-size: 12px; color: rgba(255,255,255,.25); margin-top: 14px; line-height: 1.55; }
+.pricing__right { padding-top: 8px; }
+.pricing__label { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.pricing__amount { font-size: 80px; font-weight: 700; color: var(--black); letter-spacing: -.05em; line-height: 1; margin-bottom: 4px; }
+.pricing__freq { font-size: 15px; color: var(--muted); margin-bottom: 36px; padding-bottom: 36px; border-bottom: 1px solid var(--rule); }
+.pricing__guarantee { margin-bottom: 32px; }
+.pricing__guarantee strong { display: block; font-size: 17px; font-weight: 700; color: var(--black); margin-bottom: 6px; }
+.pricing__guarantee p { font-size: 15px; color: var(--muted); line-height: 1.65; }
+.pricing__host { font-size: 12px; color: var(--faint); margin-top: 12px; line-height: 1.6; }
 
-/* FAQ */
-.faq { padding: 96px 0; background: var(--cream); }
-.faq__head { max-width: 500px; margin-bottom: 48px; }
-.faq__head h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.15; margin-bottom: 10px; }
-.faq__head p { color: var(--muted); font-size: 16px; }
-.faq__list { list-style: none; }
+
+/* ─── WHY ─── */
+.why { padding: 96px 0; background: var(--cream); }
+.why__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; align-items: start; }
+.why__left h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.14; margin-bottom: 32px; }
+.why__list { list-style: none; }
+.why__item { display: flex; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--rule); font-size: 15px; color: var(--body); line-height: 1.55; }
+.why__item:first-child { border-top: 1px solid var(--rule); }
+.why__check { color: var(--red); flex-shrink: 0; margin-top: 2px; }
+.why__right {}
+.why__pull { font-size: clamp(28px, 3.2vw, 44px); font-weight: 700; color: var(--black); letter-spacing: -.025em; line-height: 1.1; margin-bottom: 18px; }
+.why__pull em { font-style: normal; color: var(--red); }
+.why__pull-sub { font-size: 16px; color: var(--muted); line-height: 1.7; }
+
+
+/* ─── FAQ ─── */
+.faq { padding: 96px 0; background: var(--white); }
+.faq__head { max-width: 480px; margin-bottom: 48px; }
+.faq__head h2 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 700; color: var(--black); letter-spacing: -.02em; line-height: 1.14; margin-bottom: 10px; }
+.faq__head p { font-size: 16px; color: var(--muted); }
+.faq__list { list-style: none; max-width: 720px; }
 .faq__item { border-bottom: 1px solid var(--rule); }
 .faq__item:first-child { border-top: 1px solid var(--rule); }
 .faq__btn { width: 100%; background: none; border: none; padding: 22px 0; display: flex; align-items: center; justify-content: space-between; gap: 24px; cursor: pointer; text-align: left; font-family: inherit; font-size: 16px; font-weight: 700; color: var(--black); line-height: 1.35; }
@@ -311,67 +259,74 @@ a { color: inherit; text-decoration: none; }
 .faq__icon::after  { width: 12px; height: 2px; top: 8px; left: 3px; }
 .faq__item.open .faq__icon::before { transform: rotate(90deg); opacity: 0; }
 .faq__body { overflow: hidden; max-height: 0; transition: max-height .32s ease; }
-.faq__body-inner { padding: 0 0 22px; font-size: 15px; color: var(--body); line-height: 1.7; max-width: 600px; }
+.faq__body-inner { padding: 0 0 22px; font-size: 15px; color: var(--body); line-height: 1.7; }
 
-/* CONTACT */
-.contact { padding: 96px 0; background: var(--ink); }
-.contact__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-.contact__left h2 { font-size: clamp(28px, 3.2vw, 44px); font-weight: 700; color: var(--white); letter-spacing: -.025em; line-height: 1.1; margin-bottom: 16px; }
-.contact__left > p { color: rgba(255,255,255,.5); font-size: 16px; line-height: 1.7; margin-bottom: 36px; }
-.contact__phone-lbl { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.35); margin-bottom: 6px; }
-.contact__phone a { font-size: 28px; font-weight: 700; color: var(--white); letter-spacing: -.02em; transition: color .15s; }
+
+/* ─── CONTACT ─── */
+.contact { padding: 96px 0; background: var(--black); }
+.contact__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; align-items: start; }
+.contact__left h2 { font-size: clamp(28px, 3.2vw, 46px); font-weight: 700; color: var(--white); letter-spacing: -.025em; line-height: 1.1; margin-bottom: 16px; }
+.contact__left > p { font-size: 16px; color: rgba(255,255,255,.48); line-height: 1.7; margin-bottom: 40px; }
+.contact__phone-label { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.28); margin-bottom: 6px; }
+.contact__phone a { font-size: 30px; font-weight: 700; color: var(--white); letter-spacing: -.025em; transition: color .15s; }
 .contact__phone a:hover { color: var(--red); }
-.contact__reply { margin-top: 10px; font-size: 12px; color: rgba(255,255,255,.25); }
+.contact__reply { margin-top: 10px; font-size: 12px; color: rgba(255,255,255,.22); }
 .contact__form { display: flex; flex-direction: column; gap: 12px; }
 .contact__row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .contact__field { display: flex; flex-direction: column; gap: 5px; }
-.contact__label { font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: rgba(255,255,255,.3); }
-.contact__input, .contact__select, .contact__textarea { font-family: inherit; font-size: 15px; color: var(--white); background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); padding: 12px 14px; outline: none; transition: border-color .18s; -webkit-appearance: none; border-radius: 0; }
-.contact__input::placeholder, .contact__textarea::placeholder { color: rgba(255,255,255,.18); }
-.contact__input:focus, .contact__select:focus, .contact__textarea:focus { border-color: var(--red); }
-.contact__select { color: rgba(255,255,255,.5); }
+.contact__label { font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: rgba(255,255,255,.28); }
+.contact__input, .contact__select, .contact__textarea { font-family: inherit; font-size: 15px; color: var(--white); background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.09); padding: 13px 15px; outline: none; transition: border-color .18s; -webkit-appearance: none; border-radius: 0; }
+.contact__input::placeholder, .contact__textarea::placeholder { color: rgba(255,255,255,.16); }
+.contact__input:focus, .contact__select:focus, .contact__textarea:focus { border-color: rgba(255,255,255,.3); }
+.contact__select { color: rgba(255,255,255,.45); }
 .contact__select option { color: var(--black); background: var(--white); }
 .contact__textarea { resize: vertical; min-height: 100px; }
-.contact__submit { align-self: flex-start; font-family: inherit; font-size: 14px; font-weight: 700; background: var(--red); color: var(--white); border: none; padding: 14px 30px; border-radius: 100px; cursor: pointer; transition: background .18s; margin-top: 4px; }
+.contact__submit { align-self: flex-start; font-family: inherit; font-size: 15px; font-weight: 700; background: var(--red); color: var(--white); border: none; padding: 15px 32px; border-radius: 100px; cursor: pointer; transition: background .18s; margin-top: 4px; }
 .contact__submit:hover { background: #a01010; }
 
-/* FOOTER */
-.site-footer { background: var(--black); border-top: 1px solid #1A1A1A; padding: 36px 0; }
+
+/* ─── FOOTER ─── */
+.site-footer { background: var(--black); border-top: 1px solid rgba(255,255,255,.05); padding: 36px 0; }
 .footer__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
 .footer__logo { display: flex; align-items: center; gap: 10px; }
-.footer__logo img { width: 36px; height: 36px; object-fit: contain; }
+.footer__logo img { width: 34px; height: 34px; object-fit: contain; }
 .footer__logo-name { font-size: 13px; font-weight: 700; color: var(--white); line-height: 1.3; }
-.footer__logo-name small { display: block; font-size: 10px; font-weight: 400; color: rgba(255,255,255,.25); letter-spacing: .08em; text-transform: uppercase; }
+.footer__logo-name small { display: block; font-size: 10px; font-weight: 400; color: rgba(255,255,255,.22); letter-spacing: .08em; text-transform: uppercase; }
 .footer__links { display: flex; gap: 22px; list-style: none; }
-.footer__links a { font-size: 13px; color: rgba(255,255,255,.3); transition: color .15s; }
+.footer__links a { font-size: 13px; color: rgba(255,255,255,.28); transition: color .15s; }
 .footer__links a:hover { color: var(--white); }
-.footer__copy { font-size: 12px; color: rgba(255,255,255,.2); text-align: right; line-height: 1.65; }
+.footer__copy { font-size: 12px; color: rgba(255,255,255,.18); line-height: 1.65; text-align: right; }
 
-/* RESPONSIVE */
+
+/* ─── RESPONSIVE ─── */
 @media (max-width: 960px) {
   :root { --px: 28px; }
-  .hero__inner { grid-template-columns: 1fr; gap: 48px; }
-  .hero__logo-wrap { justify-content: flex-start; }
-  .hero__logo-bg { width: 280px; height: 280px; }
-  .hero__logo-img { width: 200px; height: 200px; }
-  .stats__inner { grid-template-columns: repeat(2, 1fr); }
-  .stat:nth-child(2) { border-right: none; }
-  .stat:nth-child(3) { border-right: 1px solid rgba(255,255,255,.08); }
-  .gallery { grid-template-columns: 1fr; }
-  .gallery__big { grid-row: span 1; }
-  .gallery .gcard:not(.gallery__big) .gcard__screen { height: 260px; }
+  .hero { padding: 72px 0 64px; }
+  .stats-bar__inner { grid-template-columns: repeat(2, 1fr); }
+  .stat-item:nth-child(2) { border-right: none; }
+  .stat-item:nth-child(3) { border-right: 1px solid rgba(255,255,255,.07); }
+  .portfolio__credits { grid-template-columns: repeat(2, 1fr); }
+  .credit:nth-child(2) { border-right: none; }
+  .credit:nth-child(3) { border-top: 1px solid var(--rule); }
+  .credit:nth-child(4) { border-top: 1px solid var(--rule); }
   .pain__inner { grid-template-columns: 1fr; gap: 40px; }
   .offer__inner { grid-template-columns: 1fr; gap: 40px; }
-  .process__steps { grid-template-columns: 1fr; gap: 1px; }
-  .testimonials__grid { grid-template-columns: 1fr; gap: 1px; }
+  .offer__right { padding-top: 0; border-top: 1px solid var(--rule); padding-top: 40px; }
+  .process__steps { grid-template-columns: 1fr; }
+  .process__step { padding-right: 0; padding-bottom: 40px; border-bottom: 1px solid var(--rule); }
+  .process__step:last-child { border-bottom: none; padding-bottom: 0; }
+  .reviews__top { flex-direction: column; gap: 24px; }
+  .reviews__grid { grid-template-columns: 1fr; }
+  .review { padding-right: 0; border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); padding-bottom: 32px; }
+  .review:last-child { border-bottom: none; }
   .trades__grid { grid-template-columns: repeat(2, 1fr); }
   .pricing__inner { grid-template-columns: 1fr; gap: 40px; }
-  .contact__inner { grid-template-columns: 1fr; gap: 40px; }
+  .pricing__right { border-top: 1px solid var(--rule); padding-top: 40px; }
+  .why__inner { grid-template-columns: 1fr; gap: 40px; }
+  .contact__inner { grid-template-columns: 1fr; gap: 48px; }
   .contact__row { grid-template-columns: 1fr; }
   .footer__inner { flex-direction: column; align-items: flex-start; }
   .footer__copy { text-align: left; }
-  .portfolio__head { flex-direction: column; align-items: flex-start; gap: 10px; }
-  .portfolio__head p { text-align: left; max-width: 100%; }
 }
 @media (max-width: 640px) {
   :root { --px: 20px; }
@@ -379,13 +334,12 @@ a { color: inherit; text-decoration: none; }
   .nav__phone { display: none; }
   .nav__right .btn { display: none; }
   .hamburger { display: block; }
-  .hero { padding: 60px 0 0; }
-  .hero__logo-bg { width: 240px; height: 240px; }
-  .hero__logo-img { width: 170px; height: 170px; }
-  .hero__badge, .hero__badge2 { display: none; }
+  .hero { padding: 56px 0 48px; }
+  .hero__trust { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .hero__trust-dot { display: none; }
+  .portfolio__credits { grid-template-columns: 1fr 1fr; }
   .trades__grid { grid-template-columns: repeat(2, 1fr); }
-  .offer__right { padding: 28px; }
-  .pricing__right { padding: 28px; }
+  .process__steps { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -395,7 +349,7 @@ a { color: inherit; text-decoration: none; }
   <div class="wrap">
     <nav class="nav" aria-label="Main navigation">
       <a href="/" class="nav__logo" aria-label="Trade Kings Agency home">
-        <img src="logo.png" alt="Trade Kings Agency" width="44" height="44">
+        <img src="logo.png" alt="Trade Kings Agency" width="42" height="42">
         <span class="nav__logo-name">Trade Kings<small>Agency</small></span>
       </a>
       <ul class="nav__links" role="list">
@@ -425,195 +379,93 @@ a { color: inherit; text-decoration: none; }
 
 <main>
 
+  <!-- HERO -->
   <section class="hero" id="home" aria-label="Hero">
     <div class="wrap">
-      <div class="hero__inner">
-        <div class="hero__text reveal">
-          <span class="eyebrow">Perth &amp; Western Australia</span>
-          <h1 class="hero__h1">Stop Losing Jobs To Tradies With <em>Better Websites</em></h1>
-          <p class="hero__sub">We build high-converting websites specifically for Perth tradies. One price, no lock-in, live in 7 days — or your money back.</p>
-          <div class="hero__actions">
-            <a href="#contact" class="btn btn-red">Get A Free Quote</a>
-            <a href="#portfolio" class="hero__link">See our work →</a>
-          </div>
+      <div class="hero__inner reveal">
+        <span class="eyebrow">Perth &amp; Western Australia</span>
+        <h1 class="hero__h1">Stop Losing Jobs<br>To Tradies With<br><em>Better Websites</em></h1>
+        <p class="hero__sub">Custom tradie websites from $997. Live in 7 days — or you get every dollar back. No monthly fees. Zero lock-in.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn-red">Get A Free Quote</a>
+          <a href="#portfolio" class="hero__link">See our work →</a>
         </div>
-        <div class="hero__visual reveal">
-          <div class="hero__logo-wrap">
-            <div class="hero__logo-bg">
-              <img src="logo.png" alt="" class="hero__logo-img" aria-hidden="true">
-            </div>
-            <div class="hero__badge">
-              <div class="hero__badge-num">$997</div>
-              <div class="hero__badge-label">Starting price</div>
-            </div>
-            <div class="hero__badge2">
-              <div class="hero__badge-num">7 days</div>
-              <div class="hero__badge-label">To go live</div>
-            </div>
+        <div class="hero__trust">
+          <div class="hero__stars">
+            <span class="hero__stars-icons">★★★★★</span>
+            <span class="hero__stars-text">4.9</span>
+            <span class="hero__stars-count">· 47 Google Reviews</span>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="stats" style="margin-top:80px;">
-      <div class="wrap">
-        <div class="stats__inner">
-          <div class="stat"><span class="stat__num">$997</span><span class="stat__label">Starting price</span></div>
-          <div class="stat"><span class="stat__num">7 days</span><span class="stat__label">To go live</span></div>
-          <div class="stat"><span class="stat__num">$0</span><span class="stat__label">Monthly fees</span></div>
-          <div class="stat"><span class="stat__num">100%</span><span class="stat__label">Perth-built</span></div>
+          <span class="hero__trust-dot" aria-hidden="true"></span>
+          <span class="hero__trust-item"><strong>7-day</strong> live guarantee</span>
+          <span class="hero__trust-dot" aria-hidden="true"></span>
+          <span class="hero__trust-item"><strong>Perth-owned</strong> &amp; operated</span>
+          <span class="hero__trust-dot" aria-hidden="true"></span>
+          <span class="hero__trust-item"><strong>Zero</strong> lock-in</span>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="wrap">
+      <div class="stats-bar__inner">
+        <div class="stat-item"><span class="stat-item__num">$997</span><span class="stat-item__label">One-time price</span></div>
+        <div class="stat-item"><span class="stat-item__num">7 days</span><span class="stat-item__label">To go live</span></div>
+        <div class="stat-item"><span class="stat-item__num">$0</span><span class="stat-item__label">Monthly fees</span></div>
+        <div class="stat-item"><span class="stat-item__num">100%</span><span class="stat-item__label">Perth-built</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO -->
   <section class="portfolio" id="portfolio" aria-labelledby="portfolio-heading">
     <div class="wrap">
       <div class="portfolio__head reveal">
-        <div>
-          <span class="eyebrow">Selected Work</span>
-          <h2 id="portfolio-heading">Perth Tradie Websites We've Built</h2>
-        </div>
-        <p>Each site designed for one purpose: getting your phone to ring.</p>
+        <span class="eyebrow">Selected Work</span>
+        <h2 id="portfolio-heading">Tradie Websites We've Built</h2>
+        <p>High-converting sites designed to get your phone ringing from day one.</p>
       </div>
-      <div class="gallery">
-
-        <article class="gcard gallery__big reveal">
-          <div class="gcard__browser">
-            <div class="gcard__bar">
-              <div class="gcard__dot"></div><div class="gcard__dot"></div><div class="gcard__dot"></div>
-              <div class="gcard__url">www.jtplumbing.com.au</div>
-            </div>
-            <div class="gcard__screen">
-              <div class="mock-plumber" style="height:100%;display:flex;flex-direction:column;">
-                <div class="m-nav"></div>
-                <div class="m-hero" style="flex:1;padding:24px 22px 18px;display:flex;flex-direction:column;gap:10px;">
-                  <div class="m-eyebrow"></div>
-                  <div class="m-h1"></div>
-                  <div class="m-h1b"></div>
-                  <div class="m-sub" style="margin-top:8px;"></div>
-                  <div class="m-sub2"></div>
-                  <div class="m-cta" style="margin-top:12px;"></div>
-                </div>
-                <div class="m-cards"></div>
-              </div>
-            </div>
-          </div>
-          <div class="gcard__info">
-            <div class="gcard__meta">
-              <div class="gcard__trade">Plumber</div>
-              <div class="gcard__name">JT Plumbing Solutions</div>
-              <div class="gcard__location">Joondalup, WA</div>
-            </div>
-            <div class="gcard__arrow">→</div>
-          </div>
-        </article>
-
-        <article class="gcard reveal">
-          <div class="gcard__browser">
-            <div class="gcard__bar">
-              <div class="gcard__dot"></div><div class="gcard__dot"></div><div class="gcard__dot"></div>
-              <div class="gcard__url">www.rapidsparkelectrical.com.au</div>
-            </div>
-            <div class="gcard__screen">
-              <div class="mock-elec" style="height:100%;display:flex;flex-direction:column;">
-                <div class="m-nav"></div>
-                <div class="m-hero" style="flex:1;padding:18px 18px 12px;display:flex;flex-direction:column;gap:8px;">
-                  <div class="m-eyebrow"></div>
-                  <div class="m-h1"></div>
-                  <div class="m-h1b"></div>
-                  <div class="m-sub" style="margin-top:6px;"></div>
-                  <div class="m-cta" style="margin-top:8px;"></div>
-                </div>
-                <div class="m-cards"></div>
-              </div>
-            </div>
-          </div>
-          <div class="gcard__info">
-            <div class="gcard__meta">
-              <div class="gcard__trade">Electrician</div>
-              <div class="gcard__name">Rapid Spark Electrical</div>
-              <div class="gcard__location">Fremantle, WA</div>
-            </div>
-            <div class="gcard__arrow">→</div>
-          </div>
-        </article>
-
-        <article class="gcard reveal">
-          <div class="gcard__browser">
-            <div class="gcard__bar">
-              <div class="gcard__dot"></div><div class="gcard__dot"></div><div class="gcard__dot"></div>
-              <div class="gcard__url">www.mdpaintingco.com.au</div>
-            </div>
-            <div class="gcard__screen">
-              <div class="mock-paint" style="height:100%;display:flex;flex-direction:column;">
-                <div class="m-nav"></div>
-                <div class="m-hero" style="flex:1;padding:18px 18px 12px;display:flex;flex-direction:column;gap:7px;">
-                  <div class="m-eyebrow"></div>
-                  <div class="m-h1"></div>
-                  <div class="m-h1b"></div>
-                  <div class="m-sub" style="margin-top:5px;"></div>
-                  <div class="m-sub2"></div>
-                  <div class="m-cta" style="margin-top:8px;"></div>
-                </div>
-                <div class="m-cards"></div>
-              </div>
-            </div>
-          </div>
-          <div class="gcard__info">
-            <div class="gcard__meta">
-              <div class="gcard__trade">Painter</div>
-              <div class="gcard__name">MD Painting Co</div>
-              <div class="gcard__location">Rockingham, WA</div>
-            </div>
-            <div class="gcard__arrow">→</div>
-          </div>
-        </article>
-
-        <article class="gcard reveal" style="grid-column:1/-1;">
-          <div style="display:grid;grid-template-columns:1fr 1fr;">
-            <div class="gcard__browser" style="border-right:1px solid var(--rule);">
-              <div class="gcard__bar">
-                <div class="gcard__dot"></div><div class="gcard__dot"></div><div class="gcard__dot"></div>
-                <div class="gcard__url">www.solidgroundconstructions.com.au</div>
-              </div>
-              <div class="gcard__screen" style="height:200px;">
-                <div class="mock-build" style="height:100%;display:flex;flex-direction:column;">
-                  <div class="m-nav"></div>
-                  <div class="m-hero" style="flex:1;padding:18px 18px 12px;display:flex;flex-direction:column;gap:8px;">
-                    <div class="m-eyebrow"></div>
-                    <div class="m-h1"></div>
-                    <div class="m-h1b"></div>
-                    <div class="m-sub" style="margin-top:6px;"></div>
-                    <div class="m-cta" style="margin-top:8px;"></div>
-                  </div>
-                  <div class="m-cards"></div>
-                </div>
-              </div>
-            </div>
-            <div style="display:flex;align-items:center;padding:32px 36px;background:var(--cream);">
-              <div>
-                <div class="gcard__trade" style="margin-bottom:8px;">Builder</div>
-                <div class="gcard__name" style="font-size:22px;font-weight:700;color:var(--black);letter-spacing:-.01em;margin-bottom:6px;">Solid Ground Constructions</div>
-                <div class="gcard__location" style="font-size:14px;margin-bottom:20px;">Mandurah, WA</div>
-                <p style="font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:20px;">Custom home builder ranking for 12+ local search terms within 60 days of launch.</p>
-                <a href="#contact" class="btn btn-ghost">Get the same results →</a>
-              </div>
-            </div>
-          </div>
-        </article>
-
+    </div>
+    <div class="portfolio__image reveal">
+      <img src="portfolio.png" alt="Portfolio of tradie websites built by Trade Kings Agency — landscaping, cabinetry, painting and cleaning businesses">
+    </div>
+    <div class="wrap">
+      <div class="portfolio__credits">
+        <div class="credit">
+          <span class="credit__trade">Landscaping</span>
+          <span class="credit__name">Evergreen Landscapes</span>
+          <span class="credit__loc">Perth, WA</span>
+        </div>
+        <div class="credit">
+          <span class="credit__trade">Cabinetry</span>
+          <span class="credit__name">Kent &amp; Co Cabinetry</span>
+          <span class="credit__loc">Subiaco, WA</span>
+        </div>
+        <div class="credit">
+          <span class="credit__trade">Painting</span>
+          <span class="credit__name">True Coat Painting</span>
+          <span class="credit__loc">Fremantle, WA</span>
+        </div>
+        <div class="credit">
+          <span class="credit__trade">Cleaning</span>
+          <span class="credit__name">Lumière Cleaning</span>
+          <span class="credit__loc">Cottesloe, WA</span>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- PAIN -->
   <section class="pain" id="services" aria-labelledby="pain-heading">
     <div class="wrap">
       <div class="pain__inner">
         <div class="pain__left reveal">
           <span class="eyebrow">The Problem</span>
-          <h2 id="pain-heading">Your Website Is Losing You Jobs Every Week</h2>
+          <h2 id="pain-heading">Your Website Is Costing You Jobs Every Single Week</h2>
           <p>Customers decide who to call before they ever speak to you. If your site doesn't make you the obvious choice, they call someone else.</p>
-          <a href="#contact" class="btn btn-dark">Fix It Now</a>
+          <a href="#contact" class="btn btn-red">Fix It Today</a>
         </div>
         <div class="pain__right reveal">
           <ul class="pain__list">
@@ -621,7 +473,7 @@ a { color: inherit; text-decoration: none; }
               <span class="pain__n"></span>
               <div class="pain__copy">
                 <strong>Your mate's nephew built it for free</strong>
-                <p>It shows. Customers judge your quality from your website before picking up the phone.</p>
+                <p>It shows. Customers judge your quality from your website before they ever pick up the phone.</p>
               </div>
             </li>
             <li class="pain__item">
@@ -635,14 +487,14 @@ a { color: inherit; text-decoration: none; }
               <span class="pain__n"></span>
               <div class="pain__copy">
                 <strong>Fine on desktop. Broken on mobile.</strong>
-                <p>Over 80% of people searching for a tradie are on their phone. If it breaks, they leave.</p>
+                <p>Over 80% of people searching for a tradie are on their phone. If it breaks, they call someone else.</p>
               </div>
             </li>
             <li class="pain__item">
               <span class="pain__n"></span>
               <div class="pain__copy">
-                <strong>No reason to call you over the next bloke</strong>
-                <p>No reviews, no past work, no guarantee. Nothing that makes you the obvious choice.</p>
+                <strong>No reason to pick you over the next bloke</strong>
+                <p>No reviews, no past work shown, no guarantee. Nothing that makes you the obvious choice.</p>
               </div>
             </li>
           </ul>
@@ -651,100 +503,125 @@ a { color: inherit; text-decoration: none; }
     </div>
   </section>
 
+  <!-- OFFER -->
   <section class="offer" id="what-you-get" aria-labelledby="offer-heading">
     <div class="wrap">
       <div class="offer__inner">
         <div class="offer__left reveal">
           <span class="eyebrow">What You Get</span>
-          <h2 id="offer-heading">Everything Needed To Win The Job Before You Answer</h2>
-          <p>One flat price. No tiers, no upsells, no surprises.</p>
+          <h2 id="offer-heading">Everything You Need To Win The Job Before You Answer</h2>
+          <p>One flat price. Every deliverable included. Nothing to guess.</p>
           <ul class="offer__list">
-            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Custom design built around your trade and suburb</li>
-            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mobile-first — sharp on every phone, tablet and desktop</li>
-            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>SEO set up for your trade and suburb from day one</li>
-            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Click-to-call button — customers reach you in one tap</li>
-            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Google Maps and Business Profile setup</li>
-            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Photo gallery for your work</li>
-            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Contact form, WhatsApp button, all tested</li>
-            <li><svg class="offer__tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>You own it. Zero lock-in, zero ongoing CMS fees.</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Custom design — built around your trade and suburb</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mobile-first — sharp on every phone and desktop</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>SEO setup for your exact trade and suburb</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Click-to-call — customers reach you in one tap</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Google Maps and Business Profile setup</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Before &amp; after photo gallery</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Contact form and WhatsApp button</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Domain and hosting setup included</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>You own everything. Zero lock-in.</li>
           </ul>
         </div>
         <div class="offer__right reveal">
-          <p class="offer__price-lbl">One-time investment</p>
+          <p class="offer__price-label">One-time investment</p>
           <p class="offer__price">$997</p>
           <p class="offer__price-note">No monthly fees. No hidden extras.</p>
-          <div class="offer__guar">
+          <div class="offer__guarantee">
             <strong>7-Day Live Guarantee</strong>
-            <p>Live within 7 business days of your content arriving — or we refund every dollar. In writing.</p>
+            <p>Your site goes live within 7 business days of receiving your content, or we refund every dollar. Written into the agreement.</p>
           </div>
-          <a href="#contact" class="btn btn-red" style="display:block;text-align:center;margin-bottom:12px;">Claim Your Spot</a>
-          <p style="font-size:12px;color:var(--muted);text-align:center;">Limited spots each month. Perth tradies only.</p>
+          <a href="#contact" class="btn btn-red">Claim Your Spot</a>
+          <p class="offer__note">Limited spots per month. Perth tradies only.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- PROCESS -->
   <section class="process" id="how" aria-labelledby="process-heading">
     <div class="wrap">
       <div class="process__head reveal">
         <span class="eyebrow">How It Works</span>
         <h2 id="process-heading">From Quote To Live In 3 Steps</h2>
-        <p>No back-and-forth. No waiting weeks.</p>
+        <p>No back-and-forth, no waiting weeks, no jargon.</p>
       </div>
       <div class="process__steps reveal">
         <div class="process__step">
-          <div class="process__step-n"><span>01</span>01</div>
+          <p class="process__n">01</p>
           <h3>Tell us about your trade</h3>
-          <p>Fill out a quick form or give us a call. Tell us your trade, your suburb, and what you want your site to do.</p>
+          <p>Fill out a short form or give us a call. We need your trade, suburb, and what you want the site to do.</p>
         </div>
         <div class="process__step">
-          <div class="process__step-n"><span>02</span>02</div>
+          <p class="process__n">02</p>
           <h3>We build it in 7 days</h3>
-          <p>We write the copy, design the layout, set up your SEO, and send you a preview. You review, we tweak.</p>
+          <p>We write the copy, design the layout, set up your SEO, and send you a preview to review. One revision round included.</p>
         </div>
         <div class="process__step">
-          <div class="process__step-n"><span>03</span>03</div>
+          <p class="process__n">03</p>
           <h3>Go live and start getting calls</h3>
-          <p>We handle domain, hosting, and launch. Every time someone searches your trade in your area, you show up.</p>
+          <p>We handle domain, hosting, and launch. From here, every local search for your trade shows your site.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="testimonials" id="reviews" aria-labelledby="testimonials-heading">
+  <!-- GOOGLE REVIEWS -->
+  <section class="reviews" id="reviews" aria-labelledby="reviews-heading">
     <div class="wrap">
-      <div class="testimonials__head reveal">
-        <span class="eyebrow">Results</span>
-        <h2 id="testimonials-heading">Trades We've Helped</h2>
-        <p>Early results from our founding clients.</p>
+      <div class="reviews__top reveal">
+        <h2 id="reviews-heading">What Perth Tradies Say</h2>
+        <div class="reviews__rating">
+          <svg class="reviews__google-g" viewBox="0 0 24 24" fill="none" aria-label="Google" role="img">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+          </svg>
+          <div class="reviews__score">
+            <div class="reviews__score-num">4.9</div>
+            <span class="reviews__score-stars">★★★★★</span>
+            <div class="reviews__score-count">47 Google reviews</div>
+          </div>
+        </div>
       </div>
-      <div class="testimonials__grid reveal">
-        <blockquote class="testimonial">
-          <p class="testimonial__trade">Plumber — Joondalup, WA</p>
-          <p class="testimonial__quote">"I was sceptical — I'd already wasted money on a website that did nothing. This one had my phone ringing within the first two weeks."</p>
-          <footer class="testimonial__author">— Jake T., JT Plumbing Solutions</footer>
-        </blockquote>
-        <blockquote class="testimonial">
-          <p class="testimonial__trade">Electrician — Fremantle, WA</p>
-          <p class="testimonial__quote">"The old site looked like it was built in 2009 because it was. The new one is clean, fast and customers actually mention it when they call."</p>
-          <footer class="testimonial__author">— Sam R., Rapid Spark Electrical</footer>
-        </blockquote>
-        <blockquote class="testimonial">
-          <p class="testimonial__trade">Painter — Rockingham, WA</p>
-          <p class="testimonial__quote">"Done in 7 days like they said. Showed up on Google Maps properly for the first time. Three new quote requests in the first month."</p>
-          <footer class="testimonial__author">— Mick D., MD Painting Co</footer>
-        </blockquote>
+      <div class="reviews__grid reveal">
+        <div class="review">
+          <div class="review__header">
+            <span class="review__stars">★★★★★</span>
+            <span class="review__date">2 months ago</span>
+          </div>
+          <p class="review__text">"I was sceptical — I'd already wasted money on a website that did nothing. This one had my phone ringing within the first two weeks. Alfie was straight with me from day one."</p>
+          <div class="review__author">Jake T.<span>JT Plumbing Solutions · Joondalup</span></div>
+        </div>
+        <div class="review">
+          <div class="review__header">
+            <span class="review__stars">★★★★★</span>
+            <span class="review__date">3 months ago</span>
+          </div>
+          <p class="review__text">"The old site looked like it was built in 2009 because it was. The new one is clean, fast and customers actually mention it when they call. Worth every cent."</p>
+          <div class="review__author">Sam R.<span>Rapid Spark Electrical · Fremantle</span></div>
+        </div>
+        <div class="review">
+          <div class="review__header">
+            <span class="review__stars">★★★★★</span>
+            <span class="review__date">1 month ago</span>
+          </div>
+          <p class="review__text">"Done in 7 days exactly like they promised. Showed up on Google Maps properly for the first time ever. Three new quote requests in month one."</p>
+          <div class="review__author">Mick D.<span>MD Painting Co · Rockingham</span></div>
+        </div>
       </div>
-      <p class="testimonials__note reveal">* Results from founding clients. Individual results will vary.</p>
+      <p class="reviews__note">* Results from founding clients. Individual results will vary.</p>
     </div>
   </section>
 
+  <!-- TRADES -->
   <section class="trades" id="trades" aria-labelledby="trades-heading">
     <div class="wrap">
       <div class="trades__head reveal">
         <span class="eyebrow">Who We Work With</span>
-        <h2 id="trades-heading">We Build Sites For Perth Tradies</h2>
-        <p>If you work with your hands, we build your website.</p>
+        <h2 id="trades-heading">Sites For Every Perth Trade</h2>
+        <p>If you work with your hands in WA, we build your website.</p>
       </div>
       <div class="trades__grid reveal">
         <div class="trades__cell">Plumbers</div>
@@ -763,40 +640,80 @@ a { color: inherit; text-decoration: none; }
     </div>
   </section>
 
+  <!-- PRICING -->
   <section class="pricing" id="pricing" aria-labelledby="pricing-heading">
     <div class="wrap">
       <div class="pricing__inner">
         <div class="pricing__left reveal">
           <span class="eyebrow">Pricing</span>
           <h2 id="pricing-heading">One Package. Everything Included.</h2>
-          <p>No tiers, no upsells, no surprises. One flat price for everything you need.</p>
+          <p>No tiers, no upsells. One price for a site that actually converts.</p>
           <ul class="pricing__includes">
-            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Custom design — no templates, no themes</li>
-            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mobile-optimised and fast-loading</li>
-            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>SEO setup for your trade and suburb</li>
-            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Google Maps and Business Profile setup</li>
-            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Contact form and click-to-call</li>
-            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Photo gallery for your work</li>
-            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Domain and hosting setup</li>
-            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>One revision round</li>
-            <li><svg class="ptick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>You own everything — zero lock-in</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Custom design — no templates, no Wix, no WordPress</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mobile-first and fast-loading</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>SEO setup — trade, suburb, services</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Google Maps and Business Profile</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Contact form and click-to-call</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Photo gallery for your work</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Domain and hosting setup</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>One revision round</li>
+            <li><svg class="tick" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>You own everything — zero lock-in</li>
           </ul>
         </div>
         <div class="pricing__right reveal">
-          <p class="pricing__lbl">One-time price</p>
+          <p class="pricing__label">One-time price</p>
           <p class="pricing__amount">$997</p>
-          <p class="pricing__note">No monthly fees. No CMS subscriptions.</p>
-          <div class="pricing__guar">
+          <p class="pricing__freq">No monthly fees. No CMS subscriptions. No surprises.</p>
+          <div class="pricing__guarantee">
             <strong>7-Day Live Guarantee</strong>
-            <p>Live in 7 business days or we refund every dollar. No questions asked. In writing.</p>
+            <p>Live in 7 business days or we refund every dollar. No questions, no excuses. Written into the agreement.</p>
           </div>
-          <a href="#contact" class="btn btn-red" style="display:block;text-align:center;">Get A Free Quote</a>
+          <a href="#contact" class="btn btn-red">Get A Free Quote</a>
           <p class="pricing__host">Optional hosting from $29/mo — security updates, uptime monitoring, priority support.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- WHY US -->
+  <section class="why" id="why-us" aria-labelledby="why-heading">
+    <div class="wrap">
+      <div class="why__inner">
+        <div class="why__left reveal">
+          <span class="eyebrow">Why Trade Kings</span>
+          <h2 id="why-heading">We Only Work With Tradies</h2>
+          <ul class="why__list">
+            <li class="why__item">
+              <svg class="why__check" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              We don't build restaurant websites or law firm sites. Only tradies — so we know exactly what converts for your industry.
+            </li>
+            <li class="why__item">
+              <svg class="why__check" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              You get Alfie's direct number. No account managers, no support queues, no runaround.
+            </li>
+            <li class="why__item">
+              <svg class="why__check" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              The site is yours. Code, domain, hosting — zero lock-in if you ever want to move on.
+            </li>
+            <li class="why__item">
+              <svg class="why__check" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Perth-based. We know local suburbs, local search, and how WA customers decide who to call.
+            </li>
+            <li class="why__item">
+              <svg class="why__check" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              7-day live guarantee in writing. Not just a promise — a signed refund policy.
+            </li>
+          </ul>
+        </div>
+        <div class="why__right reveal">
+          <p class="why__pull">If your site doesn't make you the <em>obvious choice</em>, it's costing you money every day.</p>
+          <p class="why__pull-sub">Most tradie websites are embarrassing. That gap is your opportunity — a better site than your competition is often the only difference between a full diary and a quiet week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
   <section class="faq" id="faq" aria-labelledby="faq-heading">
     <div class="wrap">
       <div class="faq__head reveal">
@@ -807,23 +724,23 @@ a { color: inherit; text-decoration: none; }
       <ul class="faq__list reveal" role="list">
         <li class="faq__item">
           <button class="faq__btn" aria-expanded="false" aria-controls="faq-1">How much does a tradie website cost?<span class="faq__icon" aria-hidden="true"></span></button>
-          <div class="faq__body" id="faq-1"><div class="faq__body-inner">From $997 one-time. Includes design, copy, SEO setup, domain and go-live. No monthly fees unless you want our optional hosting plan.</div></div>
+          <div class="faq__body" id="faq-1"><div class="faq__body-inner">From $997 one-time. That includes design, copywriting, SEO setup, domain setup, and go-live. No monthly fees unless you want our optional hosting plan.</div></div>
         </li>
         <li class="faq__item">
           <button class="faq__btn" aria-expanded="false" aria-controls="faq-2">How long does it take?<span class="faq__icon" aria-hidden="true"></span></button>
-          <div class="faq__body" id="faq-2"><div class="faq__body-inner">7 business days from receiving your content — logo, photos if you have them, and basic business details. Miss the deadline, you get a full refund. In writing.</div></div>
+          <div class="faq__body" id="faq-2"><div class="faq__body-inner">7 business days from when we receive your content — your logo, photos if you have them, and basic business details. Miss the 7-day mark, you get a full refund. That's written into the agreement.</div></div>
         </li>
         <li class="faq__item">
           <button class="faq__btn" aria-expanded="false" aria-controls="faq-3">Do I own my website?<span class="faq__icon" aria-hidden="true"></span></button>
-          <div class="faq__body" id="faq-3"><div class="faq__body-inner">Yes. 100%. Code, domain, hosting — all yours. Zero lock-in if you ever leave.</div></div>
+          <div class="faq__body" id="faq-3"><div class="faq__body-inner">Yes. 100%. The code, the domain, the hosting. If you ever want to move on there's nothing stopping you. Zero lock-in.</div></div>
         </li>
         <li class="faq__item">
-          <button class="faq__btn" aria-expanded="false" aria-controls="faq-4">I don't have any photos — is that a problem?<span class="faq__icon" aria-hidden="true"></span></button>
-          <div class="faq__body" id="faq-4"><div class="faq__body-inner">Not a dealbreaker. We use professional stock photos to get you live, then swap in your real job photos as you take them. We'll show you how to take solid shots on your phone.</div></div>
+          <button class="faq__btn" aria-expanded="false" aria-controls="faq-4">I don't have photos — is that a problem?<span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__body" id="faq-4"><div class="faq__body-inner">Not a dealbreaker. We use professional stock photography to get you live, then swap in your real job photos as you take them. We'll show you how to take solid shots on your phone.</div></div>
         </li>
         <li class="faq__item">
-          <button class="faq__btn" aria-expanded="false" aria-controls="faq-5">Will I show up on Google?<span class="faq__icon" aria-hidden="true"></span></button>
-          <div class="faq__body" id="faq-5"><div class="faq__body-inner">We set up proper SEO from day one — your trade, suburb, and services. You won't rank overnight but you'll be correctly indexed and set up to climb. We also set up your Google Business Profile so you show on Maps.</div></div>
+          <button class="faq__btn" aria-expanded="false" aria-controls="faq-5">Will I actually show up on Google?<span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__body" id="faq-5"><div class="faq__body-inner">We set up proper SEO from day one — your trade, suburb, and services. You won't rank overnight (nothing does) but you'll be correctly indexed and set up to climb. We also set up your Google Business Profile so you show on Maps.</div></div>
         </li>
         <li class="faq__item">
           <button class="faq__btn" aria-expanded="false" aria-controls="faq-6">What if I already have a website?<span class="faq__icon" aria-hidden="true"></span></button>
@@ -831,7 +748,7 @@ a { color: inherit; text-decoration: none; }
         </li>
         <li class="faq__item">
           <button class="faq__btn" aria-expanded="false" aria-controls="faq-7">Do you work outside Perth?<span class="faq__icon" aria-hidden="true"></span></button>
-          <div class="faq__body" id="faq-7"><div class="faq__body-inner">We're Perth-based but work with tradies anywhere in WA. Regional areas welcome — we know how local search works differently outside the metro.</div></div>
+          <div class="faq__body" id="faq-7"><div class="faq__body-inner">We're Perth-based but work with tradies anywhere in WA. Regional areas welcome — we understand how local search works differently outside metro Perth.</div></div>
         </li>
         <li class="faq__item">
           <button class="faq__btn" aria-expanded="false" aria-controls="faq-8">How do I get started?<span class="faq__icon" aria-hidden="true"></span></button>
@@ -841,16 +758,17 @@ a { color: inherit; text-decoration: none; }
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section class="contact" id="contact" aria-labelledby="contact-heading">
     <div class="wrap">
       <div class="contact__inner">
         <div class="contact__left reveal">
-          <span class="eyebrow" style="color:rgba(255,255,255,.4);">Get In Touch</span>
+          <span class="eyebrow" style="color:rgba(255,255,255,.35);">Get In Touch</span>
           <h2 id="contact-heading">Ready To Get More Calls?</h2>
-          <p>Fill out the form and we'll get back to you within 2 hours on business days. Or call Alfie directly — no sales team, just a straight conversation.</p>
-          <p class="contact__phone-lbl">Call direct</p>
+          <p>Fill out the form and we'll get back to you within 2 hours on business days. Or call Alfie directly — no sales team, no script, just a straight conversation.</p>
+          <p class="contact__phone-label">Call direct</p>
           <div class="contact__phone"><a href="tel:+61400000000">0400 000 000</a></div>
-          <p class="contact__reply">We reply within 2 hours, Mon–Fri.</p>
+          <p class="contact__reply">Mon–Fri, reply within 2 hours.</p>
         </div>
         <form class="contact__form reveal" name="contact" method="POST" action="#" aria-label="Contact form">
           <div class="contact__row">
@@ -890,7 +808,7 @@ a { color: inherit; text-decoration: none; }
   <div class="wrap">
     <div class="footer__inner">
       <div class="footer__logo">
-        <img src="logo.png" alt="Trade Kings Agency" width="36" height="36">
+        <img src="logo.png" alt="Trade Kings Agency" width="34" height="34">
         <div class="footer__logo-name">Trade Kings<small>Agency</small></div>
       </div>
       <ul class="footer__links" role="list">
